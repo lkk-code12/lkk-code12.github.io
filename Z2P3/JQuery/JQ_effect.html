@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Effects</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(`#hide`).on(`click`,function () {
+                $(`p`).hide()
+            })
+
+            $(`#show`).on(`click`,function () {
+                $(`p`).show()
+            })
+
+            $(`#toggle`).on(`click`,function () {
+                $(`p`).toggle()
+            })
+
+            $(`#fadeIn`).on(`click`,function () {
+                $(`p`).fadeIn()
+            })
+
+            $(`#fadeOut`).on(`click`,function () {
+                $(`p`).fadeOut()
+            })
+
+            $(`#fadeToggle`).on(`click`,function () {
+                $(`p`).fadeToggle()
+            })
+
+            $(`#slideDown`).on(`click`,function () {
+                $(`p`).slideDown()
+            })
+
+            $(`#slideUp`).on(`click`,function () {
+                $(`p`).slideUp()
+            })
+
+            $(`#slideToggle`).on(`click`,function () {
+                $(`p`).slideToggle()
+            })
+
+            $(`#animate`).on(`click`,function () {
+                $(`div`).animate({
+                    left:`500px`,
+                    width:`200px`,
+                    height:`200px`,
+                })
+            })
+
+            $(`#textAnimate`).on(`click`,function () {
+                var ani = $(`h1`)
+                ani.animate({left:`800px`,fontSize:`50px`,fontColor:`red`},`slow`)
+            })
+
+            $(`#stopAnimate`).on(`click`,function () {
+                $(`h1`).stop()
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Reiciendis praesentium fugiat repellendus quas voluptates 
+        magnam corporis, voluptatem accusamus, totam repellat placeat 
+        libero culpa dolorem necessitatibus facere officia nemo, ea excepturi!
+    </p>
+
+    <button id="hide">Hide Button</button>
+    <button id="show">Show Button</button>
+    <button id="toggle">Toggle Button</button>
+
+    <button id="fadeIn">FadeIn Button</button>
+    <button id="fadeOut">FadeOut Button</button>
+    <button id="fadeToggle">FadeToggle Button</button>
+
+    <button id="slideDown">SlideDown Button</button>
+    <button id="slideUp">SlideUp Button</button>
+    <button id="slideToggle">SlideToggle Button</button>
+
+    <br><br>
+
+    <div style="width: 100px; height: 100px; background-color: red; position: relative;"></div><br>
+    <button id="animate">Animate Button</button><br><br>
+
+    <h1 style="position: relative;">Hello JQuery</h1>
+    <button id="textAnimate">AnimateText Button</button>
+    <button id="stopAnimate">AnimateStop Button</button>
+</body>
+</html>

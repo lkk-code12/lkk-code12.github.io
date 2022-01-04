@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Events</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function name(params) {
+            $(`#mydiv`).html(`<h2>Hi JQ<h2>`)
+
+            $(`button`).on(`click`,function name(params) {
+                $(`h1`).hide(`slow`,function name(params) {
+                    alert(`Hello buddy!`)
+                })
+            })
+
+            <!--focus-->
+            $(`#balance`).on(`focus`,function name(params) {
+                //alert(`This is balance!`)
+                var total = Number($(`#total`).val())
+                var pay = Number($(`#pay`).val())
+                $(this).val(pay-total)
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--Click-->
+   <div id="mydiv">
+
+   </div>
+   <h1 id="myh1">Hello JQuery</h1>
+   <button>click</button>
+
+   <!--Focus-->
+   <form action="">
+       <input type="number" name="total" id="total"><br>
+       <input type="number" name="pay" id="pay"><br>
+       <input type="number" name="balance" id="balance">
+   </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script type="text/javascript">
+        var json1 = `{"name":"Mg Mg","age":22,"country":"Burma"}`
+        console.log(typeof json1);
+
+        var obj = JSON.parse(json1) //corverting JSON to JS
+        console.log(typeof obj);
+
+        var jsobj1 = {name:"Ko Ko",age:25} //convering JS to JSON
+        var jsobj2 = {name:"Zaw Zaw",age:25}
+
+        let jsobj = [jsobj1,jsobj2]
+        let jsonStr = JSON.stringify(jsobj)
+        console.log(typeof jsonStr);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

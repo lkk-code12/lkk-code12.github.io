@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Refining and Filtering Section</title>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function name(params) {
+            if ($(`button`).length) {
+                console.log(`true`);
+            }
+
+            var p = $(`.foo`).has(`p`)
+            console.log(p);
+
+            var notBar = $(`h2`).not(`.bar`)
+            console.log(notBar);
+
+            var current = $(`ul li`).filter(`.current`)
+            console.log(current);
+
+            var first = $(`ul li`).first(``)
+            console.log(first);
+
+            var eq = $(`ul li`).eq(2)
+            console.log(eq);
+
+            var check = $(`form :checked`)
+            console.log(check);
+
+            var dis = $(`form :disabled`)
+            console.log(dis);
+
+            var en = $(`form :enabled`)
+            console.log(en);
+
+            var inp = $(`form :input`)
+            console.log(inp);
+
+            var sel = $(`form :selected`)
+            console.log(sel);
+        })
+    </script>
+</head>
+<body>
+    <div class="foo">
+        <p>My Name</p>
+        <h1>My Age</h1>
+    </div>
+    <div class="foo">
+        <h1>My City</h1>
+    </div>
+    <hr>
+
+    <div>
+        <h2 class="ygn">Yangon</h2>
+        <h2 class="bar">NayPyiDaw</h2>
+        <h2 class="mdy">Mandalay</h2>
+    </div>
+    <hr>
+
+    <div>
+        <ul>
+            <li class="current">One</li>
+            <li class="then">Two</li>
+            <li class="so">Three</li>
+            <li class="current">Four</li>
+            <li class="current">Five</li>
+        </ul>
+    </div>
+    <hr>
+    
+    <!--Selectiong form element-->
+    <div>
+        <form action="">
+            <input type="text" name="mr/mrs" id="" checked="checked" value="mr/mrs"><br>
+            <input type="email" name="example@gmial.com" id="" disabled="disabled" value="example@gmail.com"><br>
+            <input type="number" name="age" id="" value="age"><br>
+            <input type="radio" name="gender" id="" value="gender"><br>
+            <select name="interests" id="">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="jquery">jquery</option>
+            </select>
+        </form>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mettayaungpyan</title>
+    <link rel="icon" href="images/Metta logo edit.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="style.js"></script>
+
+    <script src="../jquery.min.js"></script>
+
+    <script src="../sweet_alert/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../sweet_alert/sweetalert2.min.css">
+
+    <script>
+        $(function () {
+            $(`.content`).first().slideDown();
+
+            $(`nav.nav1 ul.link-wapper li a`).on(`click`,function (event) {
+                var current_tab = $(this)
+                $(`nav.nav1 ul.link-wapper li a`).removeClass(`active`);
+                current_tab.addClass(`active`);
+
+                $(`.content`).slideUp();
+                current_tab_href = current_tab.attr(`href`);
+                $(current_tab_href).slideDown();
+
+                event.preventDefault();
+            })
+
+            $(`.atc`).on(`click`,function () {
+                Swal.fire({
+                    color: `green`,
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Item has been added to cart!',
+                    showConfirmButton: false,
+                    timer: 800
+                }) 
+            
+                let id = $(this).data(`id`)
+                let name = $(this).data(`name`)
+                let price = $(this).data(`price`)
+                let item = {
+                    id: id,
+                    name: name,
+                    price: price,
+                    qty: 1
+                }
+                //console.log(price);
+                //console.log(item);
+            
+                let cart = localStorage.getItem(`cart`)
+                let myArr = ``
+            
+                if(cart != null){
+                    myArr = JSON.parse(cart)
+                }else{
+                    myArr = []
+                }
+            
+                //Homework
+                let status = 0;
+                for(row of myArr){
+                    if(row.id == id){
+                        row.qty++;
+                        status = 1;
+                    }
+                }
+                if(status == 0){
+                    myArr.push(item)
+                }
+            
+                //JavaScript Object => JSON String
+                let myArrString = JSON.stringify(myArr)
+                //console.log(myArrString);
+                localStorage.setItem(`cart`,myArrString)
+            
+                getdata()
+            })
+
+            //Get data from Local Storage
+            function getdata() {
+                let cart = localStorage.getItem(`cart`)
+                if(cart != null){
+                    let myArr = JSON.parse(cart)
+                    let row = ``
+                    let i = 0;
+                    let total = 0;
+                    for ([index,item] of myArr.entries()){
+                    total += (item.qty*item.price)
+                    row += `<tr>
+                                <td>
+                                    <button class="remove" data-id="${index}">Remove</button>
+                                    ${++i}
+                                </td>
+                                <td>${item.name}</td>
+                                <td>${item.price} Ks</td>
+                                <td>
+                                    <input type="number" min="1" value="${item.qty}" data-id="${index}" class="updateqty">
+                                </td>
+                                <td>${item.qty*item.price} Ks</td>
+                            </tr>`
+                }
+                row += `<tr>
+                            <td colspan="4">Total Amount</td>
+                            <td>${total} Ks</td>
+                        </tr>`
+
+                $(`tbody`).html(row)
+            }else{
+                $(`tbody`).html(`<tr><td colspan="5">Your cart is empty!</td></tr>`)
+            }
+            }
+            getdata();
+
+            //Remove
+            $(`tbody`).on(`click`,`.remove`,function () {
+                let index = $(this).data(`id`)
+                //console.log(index);
+                let cart = localStorage.getItem(`cart`)
+                let myArr = JSON.parse(cart);
+                //Delete one row
+                myArr.splice(index,1)
+                //JS object => JSON String
+                let myArrString = JSON.stringify(myArr)
+                //console.log(myArrString);
+                localStorage.setItem(`cart`,myArrString)
+                getdata()
+            })
+
+            //Increase - Decrease Qty
+            $(`tbody`).on(`change`,`.updateqty`,function () {
+                let index = $(this).data(`id`)
+                //console.log(index);
+                let qty = $(this).val()
+                let cart = localStorage.getItem(`cart`)
+                let myArr = JSON.parse(cart)
+                myArr[index].qty = qty
+                //JS Object => JSON String
+                let myArrString = JSON.stringify(myArr)
+                //console.log(myArrString);
+                localStorage.setItem(`cart`,myArrString)
+                getdata()
+            })
+
+            //Checkout
+            $(`.checkout`).on(`click`,function () {
+                localStorage.removeItem(`cart`)
+                getdata();
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <!--Home Section-->
+    <!--Navigation Division-->
+    <div class="nav_div">
+        <nav class="nav1">
+            <div>
+                <h1>METTAYAUNGPYAN</h1>
+            </div>
+
+            <div>
+                <h3>Speical Pickled Tea & Fried Beans Production</h3>
+            </div>
+
+            <div class="tab">
+                <ul class="link-wapper">
+                    <li>
+                        <a href="#home" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#cart">Cart</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            <div>
+        </div>
+
+        <!--Home Background Image Division-->
+        <div class="content" id="home">
+            <div class="home_bg_image">
+                <p class="text_on_background">
+                    Welcome to our web page!<br>
+                    You can find and order one of Myanmar traditional Foods,
+                    pickled tea & fried beans that produced from us.
+                </p>
+            </div>
+        </div>
+
+        <!--Shop Item Division-->
+        <div class="content" id="shop">
+            <div class="shop_background">
+                <div>
+                    <h4>You can order from this page. Door to door service is available!</h4>
+                </div>
+                <div class="shop">
+                    <div>
+                        <img src="images/chickpea.png" alt="" height="120px" width="180px"><br>
+                        <strong>Fried Chick-pea Beans</strong><br>
+                        <strong>3,000 KS/ 1 Kg</strong><br>
+                        <button class="atc" data-id="1" data-name="Fried Chick-pea Beans" 
+                        data-price="3000">Add to cart</button>
+                    </div>
+                    <div>
+                        <img src="images/bengalbeans.png" alt="" height="120px" width="180px"><br>
+                        <strong>Fried Bengal Beans</strong><br>
+                        <strong>5,000 KS/ 1 Kg</strong><br>
+                        <button class="atc" data-id="2" data-name="Fried Bengal Beans" 
+                        data-price="5000">Add to cart</button>
+                    </div>
+                    <div>
+                        <img src="images/variousfriedbeans.jpg" alt="" height="120px" width="180px"><br>
+                        <strong>Various Fried Beans</strong><br>
+                        <strong>3,000 KS/ 1 Kg</strong><br>
+                        <button class="atc" data-id="3" data-name="Various Fried Beans" 
+                        data-price="3000">Add to cart</button>
+                    </div>
+                    <div>
+                        <img src="images/peanut.jpg" alt="" height="120px" width="180px"><br>
+                        <strong>Fried Peanuts</strong><br>
+                        <strong>3,000 KS/ 1 Kg</strong><br>
+                        <button class="atc" data-id="4" data-name="Fried Peanuts" 
+                        data-price="3000">Add to cart</button>
+                    </div>
+                    <div>
+                        <img src="images/laphet.jpg" alt="" height="120px" width="180px"><br>
+                        <strong>Pickled Tea</strong><br>
+                        <strong>3,000 KS/ 400 g</strong><br>
+                        <button class="atc" data-id="5" data-name="Pickled Tea" 
+                        data-price="3000">Add to cart</button>
+                    </div>
+                    <div>
+                        <img src="images/sesame.jpg" alt="" height="120px" width="180px"><br>
+                        <strong>Roasted Sesame</strong><br>
+                        <strong>5,000 KS/ 1 Kg</strong><br>
+                        <button class="atc" data-id="6" data-name="Roasted Sesame" 
+                        data-price="5000">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Cart Item Division-->
+        <div class="content" id="cart">
+            <div class="cart_background">
+                <h4>"Your Shop Cart List"</Your></h4>
+                <div class="mycart">
+                    <table border="1" cellpadding="20" width="80%" height="20%">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <button class="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>   
+
+    <!--Home Footer-->
+    <div class="footer_home">
+        <h2 class="footer_bar">Head Office:</h2>
+        <p class="footer_bar">A-15, Nawaday Housing Ward, Pyay,</p>
+        <p class="footer_bar">Bago West Region, Myanmar.</p>
+    </div>
+</body>
+</html>

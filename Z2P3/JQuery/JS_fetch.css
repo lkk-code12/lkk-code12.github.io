@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.country{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

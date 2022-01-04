@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Travelsing & Manipuation</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script text="type/javascript">
+        $(function () {
+            /*<!--Parents Methods-->
+            var parent = $(`span.sub_child`).parent()
+            console.log(parent);
+
+            var parents_one = $(`span.sub_child`).parents(`div.parent`)
+            console.log(parents_one);
+
+            var parents_two = $(`span.sub_child`).parents()
+            console.log(parents_two);
+
+            var parents_three = $(`span.sub_child`).parentsUntil(`div.grandparent`)
+            console.log(parents_three);
+
+            var parents_four = $(`span.sub_child`).closest(`div`)
+            console.log(parents_four);
+
+            var parents_five = $(`div.child`).closest(`div`)
+            console.log(parents_five);*/
+
+            /*<!--Child Methods-->
+            var grand = $(`div.grandparent`).children(`div`)
+            console.log(grand);
+
+            var grand_one = $(`div.grandparent`).find(`div`)
+            console.log(grand_one);*/
+
+            <!--Sibling Methods-->
+            var sib = $(`div.parent`).next()
+            console.log(sib);
+
+            var sib_one = $(`div.parent`).prev()
+            console.log(sib_one);
+
+            var sib_two = $(`div.parent`).nextAll()
+            console.log(sib_two);
+
+            var sib_three = $(`div.parent`).nextAll().first()
+            console.log(sib_three);
+
+            var sib_four = $(`div.parent`).nextAll().last()
+            console.log(sib_four);
+
+            var sib_five = $(`div.sarrogate_parent2`).prevAll()
+            console.log(sib_five);
+
+            var sib_six = $(`div.sarrogate_parent2`).prevAll().first()
+            console.log(sib_six);
+
+            var sib_seven = $(`div.sarrogate_parent2`).prevAll().last()
+            console.log(sib_seven);
+
+            var sib_eight = $(`div.parent`).siblings()
+            console.log(sib_eight);
+
+            var sib_nine = $(`div.sarrogate_parent1`).siblings()
+            console.log(sib_nine);
+        })
+    </script>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent"><h2>Parent</h2>
+            <div class="child"><h3>Child</h3>
+                <span class="sub_child"><h4>Sub_child</h4></span>
+            </div>
+        </div>
+        <div class="sarrogate_parent1"><h3>Sarrogateparent1</h3></div>
+        <div class="sarrogate_parent2"><h2>Sarrogateparent2</h2></div>
+    </div>
+</body>
+</html>
