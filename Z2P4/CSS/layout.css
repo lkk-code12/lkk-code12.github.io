@@ -1,0 +1,12 @@
+a.google,a.facebook{
+    border: 1px solid red;
+    width: 600px;
+    display: inline-block;
+}
+
+#blockelement{
+    display: inline-block;
+    border: 1px solid red;
+    width: 600px;
+}
+

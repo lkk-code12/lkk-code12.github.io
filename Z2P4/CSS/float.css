@@ -1,0 +1,13 @@
+div.float_left img{
+    width: 40%;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+div.float_right img{
+    width: 40%;
+    float: right;
+}

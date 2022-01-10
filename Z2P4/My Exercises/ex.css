@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.one{
+    color: yellow;
+    background-color: red;
+    padding: 50px 100px 50px 50px;
+}
+
+div ul{
+    display: inline-block;
+}
+
+div ul li{
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <h1>JS Varible Data Types</h1>
+        <script>
+                var firstNumber = 22 // assignment operater "="
+                document.write(firstNumber)
+                var secondNumber = 33 // assign second number as 33
+                var thirdNumber = firstNumber + secondNumber // sum of first and second number
+                document.write('<br> Sum of 22 and 33 is ' + thirdNumber)
+                var fourthNumber = firstNumber - secondNumber // sub of first and second number
+                document.write('<br > Substruction of 22 and 33 is ' + fourthNumber)
+                var fifthNumber = firstNumber * secondNumber // multiplication of first and second number
+                document.write('<br> Multiplication of 22 and 33 is ' , fifthNumber)
+                var sixthNumber = firstNumber / secondNumber // Division of first and second number
+                document.write('<br> Division of 22 and 33 is ' , sixthNumber)
+                var seventhNumber = firstNumber % secondNumber // Modulas of first and second number
+                document.write('<br> Modulus of 22 and 33 is ' , seventhNumber)
+
+                console.log(typeof(firstNumber))
+                console.log(typeof(sixthNumber))
+
+                // String data type
+                var firstName = 'Lwin'
+                var secondName = ' Ko Ko'
+                var fullName = firstName + secondName
+                console.log(typeof(firstName))
+                console.log(typeof(secondName))
+                console.log(fullName);
+                document.write('<br> My name is ', fullName)
+
+                // Boolean data type
+                var single = true
+                var passed = false
+                console.log(typeof(single))
+                console.log(typeof(passed))
+
+                // Null data type
+                var age = null
+                console.log(typeof(age))
+
+                // Array data type
+                var fruit1 = 'Banana'
+                var fruit2 = 'Mango'
+                var fruit3 = 'Orange'
+                var fruit4 = 'Apple'
+                var fruitArray = ['Banana','Mango','Orange','Apple']
+                console.log(typeof(fruitArray))
+                console.log(fruitArray)
+
+                var studentArray = ['Mg Mg',23,5.6,'Yangon']
+                console.log(studentArray);
+                console.log(studentArray[3])
+
+                // Object data type
+                var studentObject = {
+                        name : 'Mg Mg',
+                        age : 23,
+                        height : 5.6,
+                        city : 'Yangon'                        
+                }
+                console.log(typeof(studentObject))
+                console.log(studentObject)
+                console.log(studentObject['age'])
+
+                var item1 = {
+                        id : 1,
+                        name : 'Coffeemix',
+                        price : 2300,
+                        quantity : 3
+                }
+
+                var item2 = {
+                        id : 2,
+                        name : 'Bread',
+                        price : 1300,
+                        quantity : 32
+                }
+
+                var item3 = {
+                        id : 3,
+                        name : 'Cake',
+                        price : 2000,
+                        quantity : 1
+                }
+                
+                var cart = []
+                cart.push(item1,item2,item3)
+                console.log(cart)
+        </script>
+</body>
+</html>

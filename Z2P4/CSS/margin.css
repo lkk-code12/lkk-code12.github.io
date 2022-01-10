@@ -1,0 +1,27 @@
+/*Margins*/
+h2{
+    text-align: center;
+}
+
+.marginone{
+    border: 1px solid red;
+    margin: 15px;
+    /*All Four Top,Bottom,Left,Right*/
+}
+
+.margintwo{
+    border: 1px dotted black;
+    margin: 10px 2%;
+    /*Top and Bottom/Left and Right*/
+}
+
+.marginthree{
+    border: 1px dashed green;
+    margin: 10px 5px 15px;
+}
+
+.marginfour{
+    border: 1px solid red;
+    margin: 10px 5px 20px 40px;
+    margin-top: 40px;
+}

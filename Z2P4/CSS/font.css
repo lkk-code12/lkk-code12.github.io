@@ -1,0 +1,13 @@
+.onlinefont{
+    font-family: 'Dancing Script', cursive;
+}
+
+/*Offline*/
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster/Lobster-Regular.ttf);
+}
+
+.offlinefont{
+    font-family: Lobster;
+}

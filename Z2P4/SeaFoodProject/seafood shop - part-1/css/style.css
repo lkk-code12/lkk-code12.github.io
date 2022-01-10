@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: WindSong;
+    src: url(../fonts/WindSong-Regular.ttf);
+}
+
+@font-face {
+    font-family: Noto_serif;
+    src: url(../fonts/NotoSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Baloo;
+    src: url(../fonts/Baloo.ttf);
+}
+
+/* navigation bar*/
+div.nav-bar{
+    display: flex; /*makes all element inline, you can remove this line and see what is the difference*/
+    justify-content: space-between; /*try removing this and see the differences. There are options to choose from : space-around/ space-evenly*/
+}
+
+img.logo{
+    margin-left: 5px;
+}
+ul.nav-bar-links{
+    margin-top: 20px;
+}
+ul.nav-bar-links li{
+    display: inline-block;
+}
+
+div.nav-bar-btns {
+    margin-right: 8px;
+    margin-top: 7px;
+    
+}
+
+div.nav-bar-btns button{
+    width: 110px;
+    height: 55px;
+    border: none;
+    background: rgb(250, 87, 11);
+    color: white;
+}
+
+div.nav-bar-btns button, div.nav-bar-btns a{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+ul.nav-bar-links li a{
+    padding-left: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+
+div.nav-bar-btns a{
+    padding-right: 27px;
+    text-decoration: none;
+    color: black;
+}
+
+/* section 1*/
+
+
+/* Home Image */
+.background_image{
+    background-image: url(../images/homepage-hero.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 593px;
+}
+
+div .text_on_image{
+    position: relative;
+    padding-left: 450px;
+    padding-top: 200px;
+    color: #040348;
+    object-fit: scale-down;
+}
+
+div .text_on_image .always{
+    padding-left: 30px;
+    font-family: WindSong;
+    font-size: 45px;
+    transform: scale(1,2);
+}
+
+div .text_on_image .never{
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 22px;
+    letter-spacing: 5px;
+    word-spacing: 45px;
+    padding-left: 55px;
+    padding-top: 3px;
+}
+
+div .text_on_image .doorstep{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-right: 435px;
+    padding-top: 17px;
+}
+
+div .text_on_image .button{
+    padding-left: 120px;
+    padding-top: 17px;
+}
+
+div .text_on_image .button button{
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 125px;
+    height: 55px;
+    border: none;
+    background: rgb(250, 87, 11);
+    color: white;
+}
+/* Section 2 */
+
+/* How it works */
+.how_works{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-family: Noto_serif;
+    font-size: 35px;
+}
+
+.four_images{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.four_images div img{
+    width: 110px;
+    height: 110px;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+
+.four_images div h4{
+    text-align: center;
+    font-family: Baloo;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.four_images div p{
+    text-align: center;
+    font-family: Baloo;
+    font-size: 13px;
+    word-spacing: 1px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.button_two{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.button_two button{
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 125px;
+    height: 55px;
+    border: none;
+    background: rgb(250, 87, 11);
+    color: white;
+}
+
+/*Whats in the box*/
+
+div.whats-in-the-box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 800px auto;
+}
+
+div.whats-in-the-box h1{
+    font-weight: lighter;
+}
+
+div.whats-in-the-box div img{
+    object-fit : cover;
+    object-position: bottom;
+}
+
+div.whats-in-the-box div:nth-child(1) {
+    padding-top: 160px;
+    padding-left: 13%;
+    background: rgb(247, 233, 209);
+}
+
+div.whats-in-the-box div:nth-child(1) ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+div.whats-in-the-box div:nth-child(1) ul li{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+div.whats-in-the-box div:nth-child(1) ul li::before{
+    content:"\2713\0020";
+    color:rgb(250, 87, 11);
+    padding-right: 10px;
+}
+
+button.choose-my-plan-btn{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: none;
+    background: rgb(250, 87, 11);
+    color: white;
+    height: 55px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+/*Section 4*/
+
+/*Section 5 "As seen on Division Starts*/
+.as_seen_on{
+    background-color: #0d334c;
+    height: 300px;
+}
+
+.as_seen_on h4{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding-top: 70px;
+}
+
+.as_seen_on img{
+    width: 970px;
+    height: 120px;
+    padding-left: 140px;
+    padding-top: 30px;
+}
+/*Section 5 "As seen on Division Ends*/
+
+/*Section 6*/
+
+/*Section 7 "Guarantee Division Starts"*/
+.bg_guarantee{
+    background-image: url(../images/bg-guarantee.png);
+    background-size: 100%;
+    height: 490px;
+}
+
+.bg_guarantee img{
+    width: 260px;
+    height: 120px;
+    padding-left: 810px;
+    padding-top: 85px;
+}
+
+.bg_guarantee h3{
+    font-family: WindSong;
+    color: #0d334c;
+    font-size: 40px;
+    padding-left: 840px;
+    padding-top: 140px;
+}
+
+.bg_guarantee p{
+    position: absolute;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0d334c;
+    padding-left: 777px;
+    padding-top: 25px;
+}
+
+.button_three{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.button_three button{
+    margin-left: 625px;
+    margin-top: 130px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 110px;
+    height: 55px;
+    border: none;
+    background: rgb(250, 87, 11);
+    color: white;
+}
+/*Section 7 "Guarantee Division Ends"*/
+
+/*Section 8 "Member Reviews Part_One Starts"*/
+.member_reviews_bg_part_one{
+    background-color: #e7edf1;
+    background-size: 100%;
+    height: 800px;
+}
+
+.member_reviews_bg_part_one h2{
+    color: #0d334c;
+    text-align: center;
+    font-family: Noto_serif;
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.member_reviews_bg_part_one img{
+    float: left;
+    width: 830px;
+    height: 650px;
+}
+
+.member_reviews_bg_part_one div img{
+    color: #0d334c;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+    padding-top: 170px;
+}
+
+.member_reviews_bg_part_one div p{
+    color: #0d334c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    padding-left: 850px;
+    padding-top: 270px;
+}
+
+.member_reviews_bg_part_one div h5{
+    color: #0d334c;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding-left: 850px;
+    padding-top: 430px;
+}
+/*Section 8 "Member Reviews Part_One Ends"*/
+
+/*Section 9 "Generation Division Starts"*/
+.generation{
+    text-align: center;
+    font-family: Baloo;
+}
+

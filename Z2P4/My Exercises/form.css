@@ -1,0 +1,25 @@
+*{
+    background-color: white;
+    font-family: sans-serif;
+    color: red;
+}
+
+@font-face {
+    font-family: Russo;
+    src: url(Russo/RussoOne-Regular.ttf);
+}
+
+.backgroundcolor{
+    background-color: aqua;
+}
+
+.reg{
+    background-color: yellow;
+}
+
+
+.form{
+    /*text-align: center;*/
+    border-radius: 10px;
+}
+

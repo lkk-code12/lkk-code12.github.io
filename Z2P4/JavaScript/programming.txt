@@ -1,0 +1,19 @@
+
+
+
+1/ accept input
+    CPU =>
+
+    RAM =>
+    a = 5
+    a = "5"
+    b = 6
+    c = a+n
+    c = 11
+
+    name= 'Mg Mg'
+    first name= 'Yan Yan'
+    last name= 'Aung'
+
+
+    HDD =>

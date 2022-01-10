@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Loop</h1>
+    <script>
+        for (let i=1; i<=10; i++){
+            document.write(`<h3>${i}. Hello World<h3>`);
+        }
+
+        //sum of 1 to 100
+        let total = 0;
+        let count = parseInt(prompt('How many numbers would you like to sum?'));
+        for(let num=1; num<=count; num++){
+            total += num;
+        }
+        document.write(`Sum of 1 to ${count} is ${total}`);
+
+        //factorial => 5! = 5*4*3*2*1
+        let factorial = 1;
+        let ans = parseInt(prompt('Enter factorial!'));
+        for(let num=1; num<=ans; num++){
+            // factorial = factorial * num;
+            factorial *= num;
+        }
+        document.write(`<br>${ans}! is ${factorial}`);
+
+        //multiplication table
+        /*
+            5*1=5
+            5*2=10
+            5*3=15
+            5*4=20
+            ---
+            5*12=60
+        */
+        let myNumber = parseInt(prompt('Enter a number for multiplication table!    '));
+        for(let i=1; i<=12; i++){
+            if(i==9){
+                //break; terminate from loop
+                continue; // one time skip
+            }
+            let multiplication = myNumber*i;
+            document.write(`<br>${myNumber} * ${i} = ${multiplication}`); 
+        }
+        document.write(`<br><br>`)
+
+        /*
+            *   *   *
+            *   *   *
+            *   *   *
+        */
+       // nested loop
+       for (let i=1; i<=3; i++){ // loop row
+           for(let j=1; j<=3; j++){ // output *
+                document.write(` * `);
+           }
+           document.write(`<br>`)
+       }
+
+       let showNumber=1;
+       document.write('<table border="1", cellpadding="10">');
+            for(let i=1; i<=10; i++){
+                document.write('<tr>');
+                    for(let j=1; j<=10; j++){
+                        //document.write(`<td>${i*j}</td>`);
+                        document.write(`<td>${showNumber++}</td>`);
+                    }
+                document.write('<tr>')
+            }
+    </script>
+</body>
+</html>

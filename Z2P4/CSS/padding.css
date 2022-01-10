@@ -1,0 +1,9 @@
+/*Padding*/
+.padding{
+    border: 1px solid red;
+    padding: 15px;
+    /*All four T R B L*/
+    /*padding: 50px 10px;*/
+    padding-top: 50px;
+    border-radius: 20px;
+}
