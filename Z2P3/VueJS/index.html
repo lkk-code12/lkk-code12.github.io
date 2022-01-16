@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Document</title>
+</head>
+<body>
+    <div id="app">
+        <!--Raw HTML-->
+        <span v-html="message"></span>
+        {{name}}
+
+        <!--Attributes-->
+        <img v-bind:src="url" alt="" width="100px">
+        <a v-bind:href="link">Google</a>
+
+        <!--Conditional-->
+        <span v-if="status">Now you see me!</span>
+
+        <span v-if="mark>=80">Destintion</span>
+        <span v-else-if="mark>=40 && mark<80">Passed</span>
+        <span v-else>Failed</span>
+
+        <!--Loops-->
+        <ul>
+            <li v-for="stud in students">
+                {{stud.name}} ({{stud.gender}})
+            </li>
+        </ul>
+
+        <!--Events-->
+        <button v-on:click="reverseName">Click on me</button>
+
+        <!--Input Box-->
+        <input type="text" name="" id="" v-model="email">
+        <span>{{email}}</span>
+
+    </div>
+    
+    <!--VueJS-->
+    <script src="vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el : '#app',
+            
+            data : {
+                message : '<h1>Hello Vue!</h1>',
+                name : 'Mg Mg',
+                url : 'logo.svg',
+                link : 'https://google.com',
+                status : true,
+                mark : 100,
+                students : [
+                    {name : 'Ko Ko', gender : 'male'},
+                    {name : 'Nyi Nyi', gender : 'male'},
+                    {name : 'Ma Ma', gender : 'female'}
+                ],
+                email : 'testing@gmail.com'
+            },
+            
+            methods : {
+                reverseName(){
+                    //alert('Hi VueJs')
+                    alert(this.name)
+                    //this.name = this.name.split('').reverse().join('')
+                }
+            }
+        })
+        Vue.config.devtools = true
+    </script>
+</body>
+</html>
