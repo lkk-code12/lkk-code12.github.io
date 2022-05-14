@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(./library/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+/* custom scroll bar */
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--bg_color);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main_color);
+    border-radius: 5rem;
+}
+
+:root {
+    --main_color: red;
+    --bg_color: black;
+    --text_color: white;
+}
+
+.nav_bar {
+    color: var(--text_color);
+    background-color: var(--bg_color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+}
+
+.nav_bar .logo img,
+.nav_bar .logo h3,
+.footer .logo img,
+.footer .logo h3 {
+    display: inline;
+}
+
+.nav_bar .menus a {
+    color: var(--text_color);
+    text-decoration: none;
+    padding-right: 100px;
+}
+
+.nav_bar .btn button {
+    color: var(--text_color);
+    background-color: var(--main_color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+/* Body Starts */
+
+.bg_img {
+    background-image: url(./library/images/movie.jpg);
+    max-width: 100%;
+    height: 550px;
+}
+
+.bg_img .home_text {
+    display: block;
+    color: var(--text_color);
+    padding-left: 10%;
+    padding-top: 300px;
+}
+
+.bg_img .home_text .watch_now {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: none;
+}
+
+.bg_img .home_text .play {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    padding: 10px 13px;
+    padding-top: 12px;
+    padding-left: 16px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 78%;
+}
+
+
+/* movie container */
+
+.movies {
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    padding-top: 30px;
+}
+
+.heading {
+    max-width: 968px;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main_color);
+    ;
+}
+
+.movie_container {
+    max-width: 960px;
+    margin: 0px auto;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box .box_img {
+    width: 100%;
+    height: 300px;
+}
+
+.box .box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+}
+
+.box h5 {
+    padding-top: 15px;
+}
+
+.box .box_img img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 0px 1px 5px var(--main_color);
+}
+
+
+/* contact section */
+
+.contact {
+    margin: auto;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact .btn {
+    color: var(--text_color);
+    background-color: var(--main_color);
+    text-decoration: none;
+    padding: 3px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.contact h2 {
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact form {
+    background-color: var(--text_color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact form .email {
+    border: none;
+    outline: none;
+    width: 200px;
+    background-color: var(--text_color);
+}
+
+
+/* footer */
+
+.footer {
+    max-width: 100%;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer .logo {
+    margin-left: 30px;
+}
+
+.footer .social {
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.footer .social .bx {
+    background-color: var(--main_color);
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.social .bx:hover {
+    filter: brightness(1.5);
+}
+
+.copyright {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.copyright p span {
+    font-size: 20px;
+    font-weight: 500;
+}

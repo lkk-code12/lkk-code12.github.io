@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: skyblue;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            font-size: 50px;
+        }
+        
+        .title {
+            font-size: 50px;
+            text-shadow: 5px 5px 10px red;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container img {
+            width: 30%;
+            height: 270px;
+            border-radius: 20px;
+            box-shadow: 3px -3px 10px yellow;
+        }
+        
+        .container img:hover {
+            transition-duration: 0.3s;
+            filter: drop-shadow(-5px -5px 20px orange);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">Global Auto Auction</div>
+    <div class="container">
+        <img src="../images/AeroAce.jpg" alt="">
+    </div>
+</body>
+
+</html>

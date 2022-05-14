@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        :root{
+            --text_danger : red;
+            --text_warning : yellow;
+            --background_white : white;
+            --background_black : black;
+            --background_danger : red;
+            --text_white : white;
+            --text_black : black;
+        }
+
+        body{
+            background-color: orange;
+        }
+
+        h1{
+            color: var(--text_warning);
+        }
+
+        .light{
+            background-color: yellow;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .dark{
+            background-color: black;
+            color: yellow;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .light:focus{
+            background-color: var(--background_danger);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Mingalabar</h2>
+    <button class="light"><i class="fa-solid fa-toggle-on"></i>SwitchOn</button>
+    <button class="dark"><i class="fa-solid fa-toggle-off"></i>SwitchOff</button>
+</body>
+</html>

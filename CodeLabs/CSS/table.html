@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: gold;
+        }
+
+        .table{
+            width: 80%;
+            border-collapse: collapse;
+            border: 1px solid #eeeeee50;
+        }
+
+        .table thead{
+            color: white;
+            background-color: black;
+        }
+
+        .table th, .table tr, .table td{
+            padding: 10px 15px;
+        }
+
+        .table tr:nth-child(even){
+            background-color: #eeeeee30;
+        }
+
+        .table tbody tr:hover{
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Lwin Ko</td>
+                <td>lwin@gmail.com</td>
+                <td>Pyay</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Ko Ko</td>
+                <td>koko@gmail.com</td>
+                <td>Yangon</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Ma Ma</td>
+                <td>mama@gmail.com</td>
+                <td>Pyay</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Mg Mg</td>
+                <td>mgmg@gmail.com</td>
+                <td>Myeik</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>1005</td>
+                <td>Aye Aye</td>
+                <td>aye@gmail.com</td>
+                <td>Mandalay</td>
+                <td>Female</td>
+            </tr>
+        </tbody>
+    </table>
+   </div>
+</body>
+</html>

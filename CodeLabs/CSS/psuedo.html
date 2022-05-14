@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: orange;
+            height: 2000px;
+        }
+
+        .content{
+            background-color: white;
+            width: 500px;
+            height: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+
+        .title{
+            padding-top: 40px;
+            font-size: 30px;
+        }
+
+        .para{
+            padding: 20px 20px;
+        }
+
+        .btn{
+            background-color: orange;
+            padding: 7px 15px 7px 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .content:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .btn:hover{
+            background-color: yellow;
+        }
+
+        .content:active{
+            background-color: red;
+        }
+
+        .btn:active{
+            background-color: green;
+        }
+
+        .text{
+            text-align: center;
+        }
+
+        .name{
+            width: 200px;
+            height: 30px;
+            margin: auto;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .name:focus{
+            background-color: aqua;
+        }
+
+        .mypara{
+            text-align: center;
+        }
+
+        span{
+            font-size: 30px;
+        }
+
+        span::before{
+            content: "This is before";
+            font-size: 40px;
+            color: red;
+        }
+
+        span::after{
+            content: "This is after";
+            font-size: 40px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Hello Everyone!</div>
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa, neque fuga ut quaerat minima. Sunt nemo eum ullam sint iusto quam reprehenderit ad, quasi quia dolorem corrupti veniam inventore? 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi voluptatem blanditiis veritatis temporibus quis, enim numquam recusandae ipsum. Nesciunt et quos at cumque totam illo maiores labore, porro esse.
+        </p>
+        <button class="btn">Register</button>
+    </div>
+    
+    <div class="text">
+        <input type="text" class="name">
+    </div>
+    <hr>
+
+    <div class="mypara">
+        <span>Hello World</span>
+    </div>
+</body>
+</html>

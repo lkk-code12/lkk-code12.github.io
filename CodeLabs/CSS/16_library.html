@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feather SVGs</title>
+
+    <!-- link with image hover  -->
+    <link rel="stylesheet" href="./library/image_hover/imagehover.css-master/imagehover.css-master/css/imagehover.min.css">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 1000px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        
+        img {
+            width: 270px;
+            height: 200px;
+        }
+        
+        .card {
+            background-color: orange;
+            width: 500px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 50px 0px;
+            box-shadow: -5px 5px 10px black;
+            animation-duration: 5s;
+        }
+        
+        .card:hover {
+            background-color: gold;
+            transform: translate(50px, 0px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <figure class="imghvr-flip-diag-1">
+            <img src="../images/home.jpg" alt="example-image">
+            <figcaption>
+                <h3 class="ih-fade-down ih-delay-sm ">Sweet Home</h3>
+                <p class="ih-zoom-in ih-delay-md">
+                    <i>Hello welcome to sweet home. The warmest place for every person.</i>
+                </p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+
+        <figure class="imghvr-flip-diag-2">
+            <img src="../images/home2.jpg" alt="example-image">
+            <figcaption>
+                <h3 class="ih-fade-down ih-delay-sm ">Banglore</h3>
+                <p class="ih-zoom-in ih-delay-md">
+                    <i>Hello welcome to sweet home. The warmest place for every person.</i>
+                </p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+    </div>
+
+
+    <div class="card animate__animated animate__heartBeat">
+        <h1>Hello World</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        body{
+            height: 2000px;
+        }
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+        }
+
+        .two{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            position: relative; /*can adjust top, right, bottom, left from its own primary position */
+            /* top: 50px; */
+        }
+
+        .three{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute; /*can adjust top, right, bottom, left from browser */
+            right: 5px;
+            top: 100px;
+        }
+
+        .four{
+            width: 50px;
+            height: 50px;
+            background-color: navy;
+            position: fixed; /* stay fixed when scroll */
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .box{
+            /* When parent division is position relative, 
+            its child division's position absolute works with its parents field
+            and don't work with browser size */
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .sticky{
+            height: 100px;
+            background-color: skyblue;
+            position: sticky;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <hr>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+
+    <hr>
+    <div class="box">
+        <div class="item"></div>
+    </div>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    <div class="sticky"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis earum recusandae perferendis et illo iure, architecto quam asperiores explicabo cum veritatis eum repellat, id ducimus libero nesciunt est tempora.
+</body>
+</html>

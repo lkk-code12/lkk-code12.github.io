@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(123, 60, 174);
+}
+
+.reg_div1{
+    margin: auto;
+    margin-top: 4%;
+    padding-top: 0.8%;
+    width: 30%;
+    height: 500px;
+    background-color: white;
+}
+
+.reg_div2{
+    margin: auto;
+    width: 93%;
+    height: 488px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.reg_div2 img{
+    width: 60px;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 95px;
+}
+
+h2{
+    margin-left: 43%;
+    color: rgb(101, 42, 149);
+}
+
+.reg_div3{
+    padding-left: 5%;
+}
+
+.reg_div3 input{
+    width: 93%;
+    height: 27px;
+    margin-bottom: 7px;
+}
+
+.reg_div4{
+    margin-top: 10px;
+    padding-left: 5%;
+}
+
+.reg_div4 .term{
+    color: rgb(101, 42, 149);
+}
+
+.reg_div4 button{
+    background-color: rgb(101, 42, 149);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    height: 35px;
+    margin-top: 1%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.reg_div4 .member{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reg_div4 .login{
+    color: rgb(101, 42, 149);
+}
