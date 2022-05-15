@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-image: url(../jpnDark/images/portfolio_background.jpg);
+    object-fit: cover;
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: SourceSansPro-Regular;
