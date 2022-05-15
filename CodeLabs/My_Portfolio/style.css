@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 10px black;
 }
 
 .header .nav_bar a {
@@ -193,7 +194,22 @@ body {
     padding-right: 30px;
 }
 
-.animate__animated.animate__backInDown,
-{
+.animate__animated.animate__backInDown {
     --animate-duration: 1.8s;
+}
+
+
+/* Project Page */
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5%;
+    color: rgb(77, 77, 196);
+}
+
+.animate__animated .animate__heartBeat {
+    --animate-duration: 60s;
 }
