@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+    <h1>Operators</h1>
+</body>
+
+<script>
+    let num1 = 50,
+        num2 = 30;
+
+    document.write(`<h3>*** Arithmetic Operators (+ , - , * , / , % , ++ , --)</h3>`);
+
+    let sum = num1 + num2;
+    let sub = num1 - num2;
+    let mul = num1 * num2;
+    let div = num1 / num2;
+    let mod = num1 % num2;
+
+    document.write(`Sum of num1 and num2 : ` + sum);
+    document.write(`<br>Sub of num1 and num2 : ` + sub);
+    document.write(`<br>Multiply of num1 and num2 : ` + mul);
+    document.write(`<br>Division of num1 and num2 : ` + div);
+    document.write(`<br>Modulas  of num1 and num2 : ` + mod);
+    document.write(`<br>Double Plus of num1 : ` + num1++); // num1 = 51
+    document.write(`<br>Double Minus of num2 : ` + num2--); // num2 = 29
+
+    console.log(sum);
+    console.log(sub);
+    console.log(mul);
+    console.log(div);
+    console.log(mod);
+    console.log(num1); // num1 = 51
+    console.log(++num1); // num1 = 52
+    console.log(num2); // num2 = 29
+    console.log(--num2); // num2 = 28
+
+    document.write(`<h3>*** Comparison Operators (== , === , != , > , < , >= , <=)</h3>`);
+
+    document.write(`50 == 30 : ` + (num1 == num2));
+    document.write(`<br>50 === '50' : ` + (50 === '50'));
+    document.write(`<br>50 != 30 : ` + (num1 != num2));
+    document.write(`<br>50 !== '50 : ` + (50 !== '50'));
+    document.write(`<br>50 > 30: ` + (num1 > num2));
+    document.write(`<br>50 < 30: ` + (num1 < num2));
+    document.write(`<br>50 >= 30 : ` + (num1 >= num2));
+    document.write(`<br>50 <= 30 : ` + (num1 <= num2));
+
+    console.log(num1 == num2);
+    console.log(50 === '50');
+    console.log(num1 != num2);
+    console.log(50 !== '50');
+    console.log(num1 > num2);
+    console.log(num1 < num2);
+    console.log(num1 >= num2);
+    console.log(num1 <= num2);
+
+    document.write(`<h3>*** Logical Operators (&& , || , !)</h3>`)
+    var fruit = 'apple',
+        price = 1000;
+
+    if (fruit == 'apple' && price == 1000) {
+        document.write(`Thank you for buying fruit.`);
+    } else {
+        document.write(`Sorry!`);
+    }
+
+    if (fruit == 'orange' || price == 1000) {
+        document.write(`<br>Wrong fruit name`);
+    }
+
+    if (!false) {
+        document.write(`<br>true`);
+    }
+
+    document.write(`<h3>Assignment Operators (+= , -= , *= , /= , %=)</h3>`);
+    let num = 10;
+    num += 5;
+    document.write(num);
+
+    document.write(`<h3>Conditional or Tenary Operators</h3>`);
+    let result;
+    if (10 == 10) {
+        result = "same";
+    } else {
+        result = "not same";
+    }
+
+    result = 10 == 10 ? "same" : "not same";
+    document.write(result);
+</script>
+
+</html>

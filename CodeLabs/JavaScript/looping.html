@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+
+<body>
+    <h1>for looping</h1>
+</body>
+<script>
+    // for (let num = 0; num <= 5; num++) {
+    //     console.log(num);
+    // }
+
+    let num1, num2;
+
+    num1 = parseInt(prompt(`Enter number less than 5 : `));
+    console.log(typeof(num1));
+
+    while (num1 > 5) {
+        num1 = parseInt(prompt(`Enter number less than 5 : `));
+    }
+
+    num2 = parseInt(prompt(`Enter number greater than 5 : `));
+    console.log(typeof(num2));
+
+    while (num2 <= 5) {
+        num2 = parseInt(prompt(`Enter number greater than 5 : `));
+    }
+
+    for (num1; num1 <= num2; num1++) {
+        console.log(num1);
+    }
+</script>
+
+</html>
