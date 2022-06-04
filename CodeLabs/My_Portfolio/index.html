@@ -5,42 +5,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - HOME</title>
-    <link rel="icon" href="./images/portfolio_logo.png">
+    <title>My_Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./library/images/portfolio_logo.jpg">
 
-    <!-- Box Icon -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
-    <div class="header">
-        <nav class="nav_bar">
-            <a href=""><b><i>Home</i></b></a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="edu.html">Education</a>
-            <a href="project.html">Projects</a>
-            <a href="./Dark_Mode/index.html"><i class='bx bxs-moon' style='color: black; background-color: #ffffff; padding: 5px; border-radius: 50%;'></i></a>
-            <a href="./jpnLight/index.html"><img src="./images/jpn_flag.png" width="40px" height="28px" style="padding-top: 7px;" alt=""></a>
-        </nav>
-    </div>
-
-    <div class="body">
-        <div class="body_text animate__animated animate__fadeInTopLeft">
-            <h2>Hello! Welcome to my portfolio.</h2>
-            <p>My name is <span>Lwin Ko Ko</span>. <br> I am a student of CODE-LABS' A to Z training.</p>
+    <!-- Navigation Starts -->
+    <section class="nav_container">
+        <div class="logo">
+            <h2>My Portfolio</h2>
         </div>
-    </div>
+        <div class="menus">
+            <a href="#home_container" class="home">Home</a>
+            <a href="#about_container" class="about">About</a>
+            <a href="#contact_container">Contact</a>
+            <a href="#education_container">Education</a>
+            <a href="#project_container">Projects</a>
+        </div>
+        <div class="language">
+            <a href="./JPN_Mode/index.html">
+                <img src="./library/images/japan.png" style="width: 30px; height: 30px;">
+            </a>
+        </div>
+    </section>
+    <!-- Navigation Ends -->
 
+    <!-- Home Starts -->
+    <section class="home_container" id="home_container">
+        <div class="home_text">
+            <h3>Hello! Welcome to my portfolio.</h3>
+            <p>
+                My name is <b>LWIN KO KO</b>. <br> I am learning Web Development Courses in Code-Lab's <br> A to Z Programming Class.
+            </p>
+        </div>
+    </section>
+    <!-- Home Ends -->
+
+    <!-- About Starts -->
+    <section class="about_container" id="about_container">
+        <div class="about_left">
+            <h2>About Me</h2>
+            <img src="./library/images/My Profile.jpg" alt=""><br><br>
+            <span>Name : Lwin Ko Ko</span><br>
+            <span>Gender : Male</span><br>
+            <span>Date of Birth : 1996 JUN 12</span><br>
+            <span>Nationality : Myanmar</span><br>
+            <span>Ethnicity : Burmese</span>
+        </div>
+        <div class="about_right">
+            <p>
+                My name is LWIN KO KO. I am learning Web Development Courses in Code-Lab's A to Z Programming Class.
+            </p>
+            <a href="https://github.com/lkk-code12/lkk-code12.github.io/tree/master/CodeLabs" target="_blank">
+                <img src="./library/images/github.png" width="30px" height="30px">
+            </a>
+            <a href="https://www.facebook.com/lwin.ko.5477" target="_blank">
+                <img src="./library/images/facebook.png" width="30px" height="30px">
+            </a>
+            <a href="https://twitter.com/LwinKoKo1261996" target="_blank">
+                <img src="./library/images/twitter.png" width="30px" height="30px">
+            </a>
+        </div>
+    </section>
+    <!-- About Ends -->
+
+    <!-- Contact Starts -->
+    <section class="contact_container" id="contact_container">
+        <div class="contact_text">
+            <h2>Get In Touch With Me</h2>
+        </div>
+        <div class="contact_form">
+            <div class="info">
+                <h4>Please Fill Your Data. I Will Contact Soon.</h4>
+                <label for="name">Name</label><br>
+                <input type="text"><br>
+                <label for="phone">Phone</label><br>
+                <input type="text"><br>
+                <label for="email">Email</label><br>
+                <input type="text"><br>
+                <button type="button" class="btn">Send</button>
+            </div>
+        </div>
+        <div class="contact_action">
+            <div class="email">
+                <img src="./library/images/email.png" alt=""><br>
+                <span>lwinkoko1261996@gmail.com</span>
+            </div>
+            <div class="phone">
+                <img src="./library/images/phone.png" alt=""><br>
+                <span>09448015281 <br> 09798016481</span>
+            </div>
+            <div class="address">
+                <img src="./library/images/address.png" alt=""><br>
+                <span>A-15 / Nawaday Housing Ward / <br> Pyay / Myanmar</span>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Ends -->
+
+    <!-- Education Starts -->
+    <section class="education_container" id="education_container">
+        <div class="education_text">
+            <h1>Education</h1>
+        </div>
+        <div class="bachealor">
+            <div class="images">
+                <img src="./library/images/yuoe.jpg" width="40%" height="50%">
+            </div>
+            <div>
+                <b>B.A (English)</b>
+                <p>Yangon University of Distance Education (Y.U.O.E)</p>
+                <span>Class of 2016 | PYAY</span>
+            </div>
+        </div>
+        <div class="management">
+            <div class="images">
+                <img src="./library/images/robinson.jpg" width="50%" height="50%">
+            </div>
+            <div>
+                <b>Diploma in General Management</b>
+                <p>Robinson Business School (R.B.S)</p>
+                <span>Class of 2016 | NAY-PYI-TAW</span>
+            </div>
+        </div>
+        <div class="jlpt">
+            <div class="images">
+                <img src="./library/images/jlpt.png" width="50%" height="50%">
+            </div>
+            <div>
+                <h4>N4 Level</h4>
+                <p>Japanese Language Proficiency Test (JLPT)</p>
+                <span>Class of 2016 | YANGON</span>
+            </div>
+        </div>
+    </section>
+    <!-- Education Ends -->
+
+    <!-- Project Starts -->
+    <section class="project_container" id="project_container">
+        <div class="project_text">
+            <h1>Some of <span>My Pojects</span></h1>
+        </div>
+        <div class="project_box">
+            <div class="project_image">
+                <a href="./Projects/channel_project/index.html" target="_blank">
+                    <img src="./library/images/movie_project.jpg" width="100px" height="100px">
+                </a>
+                <h3>Movie Channel Project</h3>
+            </div>
+            <div class="project_image">
+                <a href="./Projects/calculator_project/calculator.html" target="_blank">
+                    <img src="./library/images/calculator.png" width="100px" height="100px">
+                </a>
+                <h3>Calculator Project</h3>
+            </div>
+            <div class="project_image">
+                <a href="./Projects/api_projects/index.html" target="_blank">
+                    <img src="./library/images/shop.png" width="100px" height="100px">
+                </a>
+                <h3>My Shop Project</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Project Ends -->
+
+    <!-- Footer Starts -->
     <div class="footer">
-        <a href="https://github.com/lkk-code12/lkk-code12.github.io/tree/master/CodeLabs" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.facebook.com/lwin.ko.5477" target="_blank"><i class='bx bxl-facebook'></i></a>
-        <a href="https://twitter.com/LwinKoKo1261996" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <h3>Thanks for visiting to my portfolio.</h3>
     </div>
+    <!-- Footer Ends -->
 </body>
 
 </html>
