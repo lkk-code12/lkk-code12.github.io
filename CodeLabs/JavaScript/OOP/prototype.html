@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <h1>Prototype</h1>
+</body>
+<script>
+    function Magazine(title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        // this.getTitle = function() {
+        //     return `Book title is ${this.title} written by ${this.author} & wrote at ${this.year}`;
+        // };
+    }
+
+    //prototype
+    Magazine.prototype.getTitle = function() {
+        return `Book title is ${this.title} written by ${this.author} & wrote at ${this.year}`;
+    };
+
+    Magazine.prototype.getYear = function() {
+        const year = new Date().getFullYear() - this.year;
+        return `This ${this.title} was written by ${this.author} at ${year} years ago.`;
+    };
+
+    var mgz = new Magazine("OOP", "Aung Aung", 2000);
+    console.log(mgz.getTitle());
+    console.log(mgz.getYear());
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object, Class & Extend</title>
+</head>
+
+<body>
+    <h1>Object, Class & Extend</h1>
+</body>
+<script>
+    // const book = {
+    //     title: "AA",
+    //     year: "2022",
+    //     getTitle: function() {
+    //         return `this title is ${this.title}`;
+    //     }
+    // };
+
+    // // var book1 = Object.create(book);
+    // // console.log(book);
+    // // console.log(book1);
+
+    // // book1.title = "book 1";
+    // // book1.year = "3000";
+    // // console.log(book1.title);
+
+    // var book1 = Object.create(book, {
+    //     title: {
+    //         value: "Myanmar"
+    //     },
+    //     year: {
+    //         value: 4000
+    //     }
+    // });
+    // console.log(book1);
+
+    class Book {
+        constructor(title, author, year) {
+            this.title = title;
+            this.author = author;
+            this.year = year;
+        }
+        setTitle() {
+            this.title = "English";
+        }
+        static show() { //call with class name
+            console.log("Morning");
+        }
+        greeting() {
+            console.log("Good Night");
+        }
+    }
+
+    class Magazine extends Book {
+        constructor(title, author, year, month) {
+            super(title, author, year);
+            this.month = month;
+        }
+    }
+
+    const book1 = new Book("Myanmar", "Mg Mg", 2000);
+    console.log(book1);
+    book1.setTitle();
+    console.log(book1);
+    console.log(book1.greeting());
+    console.log(Book.show());
+
+    var mgz = new Magazine('OOP', 'Ko Ko', 2010, 'August');
+    console.log(mgz);
+    console.log(mgz.greeting());
+</script>
+
+</html>

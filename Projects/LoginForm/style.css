@@ -1,0 +1,74 @@
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url(./images/home_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: poppins;
+    }
+    
+    @font-face {
+        font-family: poppins;
+        src: url(./fonts/Poppins/Poppins-Regular.ttf);
+    }
+    
+     :root {
+        --bg-color: gray;
+        --main-color: white;
+        --text-color: blue;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .filled_data {
+        text-align: center;
+        background-color: var(--main-color);
+        margin: auto;
+    }
+    
+    .background {
+        max-width: 500px;
+        height: 500px;
+        background-image: linear-gradient(to right, skyblue, grey);
+        color: var(--text-color);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        align-items: center;
+        margin: 50px;
+        border-radius: 30px;
+    }
+    
+    .label_text label {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .input_box input {
+        height: 25px;
+        margin: 5px;
+    }
+    
+    .login_header,
+    .gender,
+    .skills,
+    .submit_btn {
+        /* background-color: red; */
+        grid-column: span 2;
+    }
+    
+    .login_header {
+        color: var(--text-color);
+    }
+    
+    .btn {
+        padding: 10px 30px;
+        border: none;
+        color: var(--main-color);
+        background-color: var(--text-color);
+        border-radius: 15px;
+    }

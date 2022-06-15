@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="title" class="myTitle">Document Object Model</h1>
+    <h1 id="js">Hello JavaScript</h1>
+</body>
+<script>
+    // console.log(document.URL);
+    // console.log(document);
+    // console.log(document.body);
+    // console.log(document.body.attributes);
+
+    let title = document.getElementById(`title`);
+    title.style.color = 'navy';
+
+    let myTitle = document.getElementsByClassName(`myTitle`);
+    console.log(myTitle.length);
+    myTitle[0].style.color = `gold`;
+
+    console.log(document.getElementsByTagName(`h1`)[0]);
+
+    console.log(document.querySelector(`#js`));
+
+    document.querySelector(`#title`).style.color = `navy`;
+</script>
+
+</html>

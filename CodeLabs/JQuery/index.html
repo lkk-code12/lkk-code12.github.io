@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Testing</title>
+</head>
+
+<body>
+    <h1 style="position: relative;">JQuery Testing</h1>
+    <button type="button" id="showBtn">Show</button>
+    <button type="button" id="hideBtn">Hide</button>
+    <button type="button" id="toggleBtn">Toggle</button>
+</body>
+<script src="./JQuery/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $(`#showBtn`).click(function() {
+            $(`h1`)
+                .animate({
+                    left: "500px",
+                    speed: "3000"
+                })
+                .css({
+                    color: "gold"
+                })
+        })
+
+        // $(`h1`).hide();
+
+        // $(`#showBtn`).click(function() {
+        //     $(`h1`).show(3000).css({
+        //         color: "red"
+        //     })
+        // })
+
+        // $(`#hideBtn`).mouseenter(function() {
+        //     $(`h1`).hide(3000).css({
+        //         backgroundColor: "yellow"
+        //     });
+        // })
+
+        // $(`#toggleBtn`).click(function() {
+        //     $(`h1`).toggle(3000).animate({
+        //         left: '300px'
+        //     });
+        // })
+
+        // // $(`h1`).html(`<b>JQuery is the light-weight of JavaScript</b>`)
+        // $(`h1`).html();
+    })
+</script>
+
+</html>

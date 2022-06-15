@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <h1>Object</h1>
+</body>
+
+<script>
+    // var car = new Object();
+    // car.name = `Lexus`;
+    // car.price = `$100,000`;
+    // console.log(car);
+    // console.log(car.name);
+
+    function book(title, price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    var result = new book(`Myanmar`, `5000 Ks`);
+    console.log(result);
+    // new book = new Object();
+    // book.title = title;
+    // bool.price = price;
+
+    let num = 1.4546789;
+    console.log(num.toFixed(3));
+
+    var name = `Hello JavaScript`;
+    console.log(name.toUpperCase());
+    console.log(name.substr(6, 3));
+    console.log(name.split());
+
+    var date = new Date();
+    console.log(date);
+
+    var custom_date = `2022/05/22`;
+    console.log(custom_date.split(`/`));
+    [year, month, day] = custom_date.split(`/`);
+    console.log(year);
+    console.log(month);
+    console.log(day);
+</script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array</h1>
+</body>
+<script>
+    var num = 10;
+    var num2 = 20;
+
+    //simple array
+    var number = new Array(1, 2, 3, 'Mg Mg', 10.5);
+    console.log(number);
+
+    var fruits = ['apple', 'orange', 'mango', 'pineapple'];
+    console.log(fruits);
+    console.log(fruits[2]);
+    for (var i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+
+    //associated array
+    var associatedArray = [];
+    associatedArray['name'] = 'Mg Mg';
+    associatedArray['age'] = 26;
+    console.log(associatedArray);
+
+    var asso1 = {
+        'name': 'Aung Aung',
+        'age': 26,
+        greeting() {
+            console.log(`Hello ${this.name}`);
+        }
+    };
+
+    console.log(asso1.greeting());
+
+    var num1 = [1, 2, 3];
+    num1.push(4, 5, 6);
+    num1.unshift(-2, -1, 0);
+    num1.pop();
+    num1.shift();
+    console.log(num1);
+
+    var num2 = num1.push(6, 7, 8);
+    var num2 = [...num1, 9]
+    console.log(num2);
+
+    var num3 = [1, 2, 3, 4, 5];
+    let result = num3.map(function(n) {
+        return n * 10;
+    });
+    console.log(result);
+
+    var arr = [10, 20];
+    // var a = arr[0];
+    // var b = arr[1];
+    [a, b] = arr;
+
+    // var fun() => console.log(`hello`);
+    console.log(a);
+    console.log(b);
+
+    function show(a, b) {
+        console.log(a);
+        console.log(b);
+    }
+
+    var arr1 = [20, 30];
+    // show(arr1[0], arr1[1]);
+    show(arr1);
+</script>
+
+</html>
