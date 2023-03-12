@@ -129,7 +129,7 @@ html {
 .about_container .about_left img {
     border-radius: 10%;
     width: 100px;
-    height: 100px;
+    height: 110px;
     filter: brightness(1.3);
 }
 
