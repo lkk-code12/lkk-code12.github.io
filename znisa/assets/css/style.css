@@ -157,7 +157,7 @@ table {
     left: -15px;
     width: 30px;
     height: 30px;
-    background: url(/assets/img/shine_icon.svg) no-repeat;
+    background: url(../img/shine_icon.svg) no-repeat;
     background-size: contain;
 }
 
@@ -198,7 +198,7 @@ table {
     right: 30%;
     width: 24px;
     height: 24px;
-    background: url(/assets/img/shine_icon.svg) no-repeat;
+    background: url(../img/shine_icon.svg) no-repeat;
     background-size: contain;
     transform: translateY(-50%);
 }
@@ -220,7 +220,7 @@ table {
     right: -50px;
     width: 30px;
     height: 30px;
-    background: url(/assets/img/shine_icon.svg) no-repeat;
+    background: url(../img/shine_icon.svg) no-repeat;
     transform: translateY(-50%);
     background-size: contain;
 }
@@ -232,7 +232,7 @@ table {
     right: -55px;
     width: 15px;
     height: 15px;
-    background: url(/assets/img/shine_icon.svg) no-repeat;
+    background: url(../img/shine_icon.svg) no-repeat;
     background-size: contain;
 }
 
@@ -377,7 +377,7 @@ table {
     right: 0;
     width: 43px;
     height: 31px;
-    background: url(/assets/img/quote_icon.png) no-repeat;
+    background: url(../img/quote_icon.png) no-repeat;
     background-size: contain;
     transform: translateY(-50%);
 }
