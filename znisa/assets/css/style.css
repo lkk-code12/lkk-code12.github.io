@@ -113,6 +113,36 @@ button {
     border-radius: 50%;
 }
 
+/* SP Menu starts */
+.menu_btn_block {
+    display: none;
+}
+
+.menu_btn {
+    display: block;
+    margin: 3px auto;
+    width: 15px;
+    height: 1.5px;
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.bar_one_active {
+    transform: rotate(45deg) translate(3px, 3px);
+    transition: all 0.5s ease-in-out;
+}
+
+.bar_two_active {
+    opacity: 0;
+}
+
+.bar_three_active {
+    transform: rotate(-45deg) translate(3px, -3px);
+    transition: all 0.5s ease-in-out;
+}
+
+/* SP Menu ends */
+
 /* Nav bar ends */
 
 /* Table Mv starts*/
@@ -446,8 +476,23 @@ table {
         margin: 20px 0;
     }
 
-    .nav_links {
+    .nav_links_head {
         display: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav_links_head_active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        z-index: 1;
+        padding: 35px;
+        height: 30vh;
+        border-radius: 0;
+        transition: all 0.5s ease-in-out;
     }
 
     .button_style.hire_me {
@@ -457,6 +502,10 @@ table {
     .button_style.user_icon {
         width: 30px;
         height: 30px;
+    }
+
+    .menu_btn_block {
+        display: block;
     }
 
     .tools_txt_list {
@@ -522,11 +571,11 @@ table {
         gap: 20px;
     }
 
-    .client_second_card{
+    .client_second_card {
         margin-left: 0;
     }
 
-    .client_para{
+    .client_para {
         font-size: 14px;
     }
 }
