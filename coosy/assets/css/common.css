@@ -196,7 +196,7 @@ a:hover {
 .main__keyVisual__title .title__large,
 .main__keyVisual__title .title__large span {
   color: rgba(0, 0, 0, 0);
-  background-image: url(/assets/img/common/img_title.png);
+  background-image: url(./assets/img/common/img_title.png);
   background-size: 540px auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1180,19 +1180,19 @@ input[type=file] {
   }
 }
 .relation-link-contents .rel-link-wrap.service {
-  background-image: url(/assets/img/common/relation_link/bg_rel_service.png);
+  background-image: url(./assets/img/common/relation_link/bg_rel_service.png);
 }
 .relation-link-contents .rel-link-wrap.service .rel-explanation {
   color: #fff;
 }
 .relation-link-contents .rel-link-wrap.blog {
-  background-image: url(/assets/img/common/relation_link/bg_rel_blog.png);
+  background-image: url(./assets/img/common/relation_link/bg_rel_blog.png);
 }
 .relation-link-contents .rel-link-wrap.blog .rel-explanation {
   color: #fff;
 }
 .relation-link-contents .rel-link-wrap.about {
-  background-image: url(/assets/img/common/relation_link/bg_rel_about.png);
+  background-image: url(./assets/img/common/relation_link/bg_rel_about.png);
 }
 .relation-link-contents .rel-link-wrap.about .rel-explanation {
   color: #333;
@@ -1204,7 +1204,7 @@ input[type=file] {
   margin-top: -8px;
 }
 .relation-link-contents .rel-links .rel-object--grad {
-  background-image: url(/assets/img/common/relation_link/bg_gradation.png);
+  background-image: url(./assets/img/common/relation_link/bg_gradation.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1412,7 +1412,7 @@ input[type=file] {
   }
 }
 .relation-link-contents .rel-links-wide.about .rel-object {
-  background: url(/assets/img/common/relation_link/bg_rel_about_l.png) center no-repeat;
+  background: url(./assets/img/common/relation_link/bg_rel_about_l.png) center no-repeat;
   background-size: cover;
 }
 .relation-link-contents .rel-links-wide.about .rel-explanation {
@@ -1861,7 +1861,7 @@ input[type=file] {
   .list__wrap .list__item .list__item__subNav:after {
     position: absolute;
     top: -7px;
-    content: url(/assets/img/common/img_globalNav_bubble.png);
+    content: url(./assets/img/common/img_globalNav_bubble.png);
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
@@ -2164,7 +2164,7 @@ input[type=file] {
 .footerPathNav__pageTop .link {
   display: block;
   color: #cecece;
-  background-image: url("/assets/img/common/icon_toTop_btn.png");
+  background-image: url("./assets/img/common/icon_toTop_btn.png");
   background-repeat: no-repeat;
   background-position: center;
 }

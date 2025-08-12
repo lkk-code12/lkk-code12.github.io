@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 768px) {
   .mvSec{
-    background: url('/assets/img/category/recruit_mv.jpg') no-repeat center center;
+    background: url('../../img/category/recruit_mv.jpg') no-repeat center center;
     background-size: cover;
     aspect-ratio: 2 / 1;
   }
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 767px) {
   .mvSec{
-    background: url('/assets/img/sp/recruit_mv_sp.jpg') no-repeat center center;
+    background: url('../../img/sp/recruit_mv_sp.jpg') no-repeat center center;
     background-size: contain;
     aspect-ratio: 1 / 1;
   }
@@ -256,7 +256,7 @@
   content: "";
   bottom: 10px;
   right: -20px;
-  background: url('/assets/img/category/icon_midCareer.png') no-repeat;
+  background: url('../../img/category/icon_midCareer.png') no-repeat;
   background-size: contain;
   width: 30%;
   height: 55%;
@@ -281,7 +281,7 @@
   content: "";
   top: 50%;
   right: 15px;
-  background: url('/assets/img/common/icon_link_arrow.png') no-repeat;
+  background: url('../../img/common/icon_link_arrow.png') no-repeat;
   background-size: contain;
   width: 30px;
   height: 10px;
@@ -295,15 +295,15 @@
 }
 
 .threeCards__link--newGraduate{
-  background: url('/assets/img/category/bg_newGraduate_link.jpg');
+  background: url('../../img/category/bg_newGraduate_link.jpg');
 }
 
 .threeCards__link--midCareer{
-  background: url('/assets/img/category/bg_midCareer_link.jpg');
+  background: url('../../img/category/bg_midCareer_link.jpg');
 }
 
 .threeCards__link--iwateLaboratory{
-  background: url('/assets/img/category/bg_laboratory_link.jpg');
+  background: url('../../img/category/bg_laboratory_link.jpg');
 }
 
 .threeCards__para{
@@ -449,7 +449,7 @@
   content: "";
   top: 50%;
   right: 0;
-  background: url('/assets/img/common/icon_link_smallArrow.png') no-repeat;
+  background: url('../../img/common/icon_link_smallArrow.png') no-repeat;
   background-size: contain;
   width: 10px;
   height: 10px;
