@@ -1,0 +1,519 @@
+/* container & container sub */
+.container{
+  width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.container__sub{
+  max-width: 745px;
+  margin: 0 auto;
+}
+/* container & container sub */
+
+.item__top--recruit .engCaption, .iitem__top--recruit span{
+  opacity: 0.5;
+}
+
+/* MV Sec 
+========= */
+
+/* MV image
+----------- */
+.mvSec{
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mvSec{
+    background: url('/assets/img/category/recruit_mv.jpg') no-repeat center center;
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mvSec{
+    background: url('/assets/img/sp/recruit_mv_sp.jpg') no-repeat center center;
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* クーシー採用情報
+------------------ */
+.recruit__info{
+  font-family: "Noto Sans JP Bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.2;
+  position: absolute;
+}
+
+@media screen and (min-width: 900px) {
+  .recruit__info{
+    top: 25%;
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 899px) and (min-width: 768px) {
+  .recruit__info{
+    top: 25%;
+    right: 12%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recruit__info{
+    top: 1%;
+    right: 15%;
+  }
+}
+
+/* MV Sec */
+
+/* クーシーが考える「新しい働き方」とは？ 
+===================================== */
+
+/* new employees ttl
+-------------------- */
+.new__employees{
+  font-family: "Noto Sans JP Bold";
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 4px;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .new__employees{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .new__employees{
+    font-size: 25px;
+  }
+}
+
+.new__employees__para{
+  font-family: "Noto Sans JP Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.8px;
+  color: #333333;
+  margin: 35px 0 45px;
+}
+
+.employees__list__block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.employees__list__showBtn{
+  display: block;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #333333;
+  position: relative;
+}
+
+.employees__list__showBtn::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #333333;
+  transform: translate(-50%, -50%);
+}
+
+.employees__list__hideBtn{
+  position: relative;
+}
+
+.employees__list__hideBtn::before{
+  display: none;
+}
+
+/* employees list ttl */
+.employees__list__ttl{
+  font-family: "Noto Sans JP Bold";
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2.6px;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .employees__list__ttl{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .employees__list__ttl{
+    font-size: 16px;
+  }
+}
+
+.employees__list__ttl::before{
+  counter-increment: my_number;
+  content: counter(my_number)" . ";
+}
+
+.employees__list__para, .new__employees__paraSec{
+  font-family: "Noto Sans JP Regular";
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1.3px;
+  color: #666666;
+  margin: 15px 0 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .employees__list__para, .new__employees__paraSec{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .employees__list__para, .new__employees__paraSec{
+    font-size: 13px;
+  }
+}
+
+.employees__list__para{
+  display: none;
+}
+
+.list__para--active{
+  display: block;
+}
+
+.new__employees__paraSec{
+  letter-spacing: 0.7px;
+  margin: 55px 0 20px;
+}
+
+.paraSec--txt{
+  margin: 25px 0 5px;
+}
+
+.new__employees__relationship{
+  font-family: "Noto Sans JP Bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 3px;
+  color: #333333;
+  margin: 5px 0 20px;
+}
+/* クーシーが考える「新しい働き方」とは？ */
+
+/* Tokyo office & Iwate three cards 
+=================================== */
+.threeCards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 100px 0 140px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px) {
+  .threeCards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .threeCards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.threeCards__img img{
+  width: 100%;
+  height: auto;
+}
+
+.threeCards__img--midCareer{
+  position: relative;
+}
+
+.threeCards__img--midCareer::after{
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  right: -20px;
+  background: url('/assets/img/category/icon_midCareer.png') no-repeat;
+  background-size: contain;
+  width: 30%;
+  height: 55%;
+}
+
+.threeCards__link{
+  display: block;
+  font-family: "Noto Sans JP Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: 2.2px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.threeCards__link::after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 15px;
+  background: url('/assets/img/common/icon_link_arrow.png') no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 10px;
+  transform: translateY(-50%);
+}
+
+.threeCards__link--newGraduate, .threeCards__link--midCareer, .threeCards__link--iwateLaboratory{
+  width: 100%;
+  height: 40px;
+  margin: 10px 0 15px;
+}
+
+.threeCards__link--newGraduate{
+  background: url('/assets/img/category/bg_newGraduate_link.jpg');
+}
+
+.threeCards__link--midCareer{
+  background: url('/assets/img/category/bg_midCareer_link.jpg');
+}
+
+.threeCards__link--iwateLaboratory{
+  background: url('/assets/img/category/bg_laboratory_link.jpg');
+}
+
+.threeCards__para{
+  font-family: "Noto Sans JP Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 2.3px;
+  color: #333333;
+}
+/* Tokyo office & Iwate three cards */
+
+/* Browse by Job Category 
+========================= */
+.jobCategory__card{
+  margin: 100px 0;
+}
+
+.jobCategory__subTtl{
+  font-family: "Noto Sans JP Bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  color: #333333;
+}
+
+.jobCategory__ttl{
+  font-family: "Noto Sans JP Bold";
+  font-weight: 700;
+  letter-spacing: -2.3px;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .jobCategory__ttl{
+    font-size: 46px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__ttl{
+    font-size: 33px;
+    line-height: 1;
+  }
+}
+
+.jobCategory{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.jobCategory__item--iconTtl{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Noto Sans JP Bold";
+}
+
+.jobCategory__item--subTtl{
+  font-family: "Noto Sans JP Bold";
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: 0.84px;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .jobCategory__item--subTtl{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__item--subTtl{
+    font-size: 12px;
+  }
+}
+
+.jobCategory__item--ttl{
+  font-family: "Noto Sans JP Bold";
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.44px;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .jobCategory__item--ttl{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__item--ttl{
+    font-size: 20px;
+  }
+}
+
+.jobCategory__item--para{
+  font-family: "Noto Sans JP Regular";
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.7px;
+  color: #666666;
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .j.jobCategory__item--para{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .j.jobCategory__item--para{
+    font-size: 12px;
+  }
+}
+
+.jobCategory__item--link{
+  font-family: "Noto Sans JP Bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: 2.9px;
+  color: #333333;
+  padding: 0 20px 0 0;
+  position: relative;
+}
+
+.jobCategory__item--link::after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  background: url('/assets/img/common/icon_link_smallArrow.png') no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+}
+/* Browse by Job Category */
+
+/* Recruit img grid
+=================== */
+.recruit__imgGrid--one{
+  grid-area: img1;
+}
+
+.recruit__imgGrid--two{
+  grid-area: img2;
+}
+
+.recruit__imgGrid--three{
+  grid-area: img3;
+}
+
+.recruit__imgGrid--four{
+  grid-area: img4;
+}
+
+.recruit__imgGrid--five{
+  grid-area: img5;
+}
+
+.recruit__imgGrid--six{
+  grid-area: img6;
+}
+
+.recruit__imgGrid--seven{
+  grid-area: img7;
+}
+
+.recruit__imgGrid--eight{
+  grid-area: img8;
+}
+
+@media screen and (min-width: 768px) {
+  .recruit__imgGrid{
+    display: grid;
+    grid-template-areas: 
+      "img1 img2 img3 img4"
+      "img5 img6 img7 img8";
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .recruit__imgGrid{
+    display: grid;
+    grid-template-areas: 
+      "img1 img2"
+      "img3 img4"
+      "img5 img6"
+      "img7 img8";
+  }  
+}
+
+.recruit__imgGrid img{
+  width: 100%;
+  height: 100%;
+}
+/* Recruit img grid */
