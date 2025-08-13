@@ -1,5 +1,5 @@
 /* container & container sub */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .container {
     width: calc(100% - 80px);
     margin: 0 auto;
@@ -11,7 +11,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     width: calc(100% - 40px);
     margin: 0 auto;
@@ -126,40 +126,15 @@
   margin: 35px 0 45px;
 }
 
+.employees__list{
+  margin: 10px 0;
+}
+
 .employees__list__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-}
-
-.employees__list__showBtn {
-  display: block;
-  width: 25px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #333333;
-  position: relative;
-}
-
-.employees__list__showBtn::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: #333333;
-  transform: translate(-50%, -50%);
-}
-
-.employees__list__hideBtn {
-  position: relative;
-}
-
-.employees__list__hideBtn::before {
-  display: none;
 }
 
 /* employees list ttl */
@@ -169,6 +144,11 @@
   line-height: 1.5;
   letter-spacing: 2.6px;
   color: #333333;
+}
+
+.employees__list--arr{
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -261,6 +241,8 @@
 @media screen and (max-width: 767px) {
   .threeCards {
     grid-template-columns: repeat(1, 1fr);
+    width: min(100%, 300px);
+    margin: 50px auto 70px;
   }
 }
 
@@ -287,7 +269,6 @@
 .threeCards__link {
   display: block;
   font-family: "Noto Sans JP Bold";
-  font-size: 20px;
   font-weight: 700;
   line-height: 2.2;
   letter-spacing: 2.2px;
@@ -296,6 +277,18 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .threeCards__link {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .threeCards__link {
+    font-size: 17px;
+  }
 }
 
 .threeCards__link::after {
@@ -343,8 +336,16 @@
 
 /* Browse by Job Category 
 ========================= */
-.jobCategory__card {
-  margin: 100px 0;
+@media screen and (min-width: 768px) {
+  .jobCategory__card {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__card {
+    margin: 50px 0;
+  }
 }
 
 .jobCategory__subTtl {
@@ -354,6 +355,18 @@
   line-height: 1.4;
   letter-spacing: 1.5px;
   color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .jobCategory__subTtl {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__subTtl {
+    font-size: 12px;
+  }
 }
 
 .jobCategory__ttl {
@@ -373,7 +386,7 @@
 @media screen and (max-width: 767px) {
   .jobCategory__ttl {
     font-size: 33px;
-    line-height: 1;
+    line-height: 1.2;
   }
 }
 
@@ -387,6 +400,8 @@
 @media screen and (max-width: 767px) {
   .jobCategory {
     grid-template-columns: repeat(1, 1fr);
+    width: min(100%, 300px);
+    margin: 30px auto 0;
   }
 }
 
@@ -467,6 +482,18 @@
   color: #333333;
   padding: 0 20px 0 0;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .jobCategory__item--link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .jobCategory__item--link {
+    font-size: 16px;
+  }
 }
 
 .jobCategory__item--link::after {

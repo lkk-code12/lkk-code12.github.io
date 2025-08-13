@@ -6,6 +6,7 @@
   <title>Recruit ｜クーシー株式会社採用情報</title>
   <meta name="keywords" content="クーシー株式会社採用情報, Web制作, 岩手県, 盛岡市, 新卒採用, 中途採用">
   <meta name="description" content="クーシー株式会社採用情報 - Web制作会社クーシーの採用情報ページです。新卒採用、中途採用、岩手採用の情報を掲載しています。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="クーシー株式会社採用情報">
   <meta property="og:type" content="website">
   <meta property="og:description" content="クーシー株式会社採用情報 - Web制作会社クーシーの採用情報ページです。新卒採用、中途採用、岩手採用の情報を掲載しています。">
@@ -48,28 +49,28 @@
             1999年に設立したクーシーはインターネットによる変革で、既存のルールに捕らわれない新しいビジネスが生まれ、そこで活躍できると確信していました。それから20年近くの時が過ぎインターネットは成熟期を迎えています。そして今、働き方に新しい変革が生まれています。新しい働き方とはどのように写っているのでしょうか？クーシーが考える新しい働き方を大きくまとめると３つになります。
           </p>
           <ul>
-            <li>
+            <li class="employees__list">
               <div class="employees__list__block">
                 <h3 class="employees__list__ttl">フラットな関係は「信頼関係」から</h3>
-                <span class="employees__list__showBtn employees__list__hideBtn"></span>
+                <img src="/assets/img/common/icon_downArr_accordion.png" alt="アイコンの画像" class="employees__list--arr">
               </div>
               <p class="employees__list__para list__para--active">
                 会社が働く人の様々な事情や多様な価値観を受け入れられないこともあります。個を大切にするあまり、会社の効率を損なう場合もあります。それぞれの事情がある以上、それぞれの価値観は異なります。お互い受け入れることが大切。ベースとしてマジメに仕事に取り組む姿勢が「信頼関係」を築きます。そして「信頼関係」をベースにお互いの成果に向き合い効率化していくことでフラットな関係を築けるのではないかと思います。
               </p>
             </li>
-            <li>
+            <li class="employees__list">
               <div class="employees__list__block">
                 <h3 class="employees__list__ttl">役職ではなく、成果と貢献</h3>
-                <span class="employees__list__showBtn"></span>
+                <img src="/assets/img/common/icon_downArr_accordion.png" alt="アイコンの画像" class="employees__list--arr">
               </div>
               <p class="employees__list__para">
                 「信頼関係」をベースとしたフラットな関係では、役職はただの役割でしかないと思います。この役割の中でみんなの成果に貢献した人を正当に評価します。成果というと利益や成長などが浮かびますが、そのプロセスには様々な要因があります。会社ではなく、みんなが成果をあげることを考えて行動する。そうすることで組織は効率化していくと思います。
               </p>
             </li>
-            <li>
+            <li class="employees__list">
               <div class="employees__list__block">
                 <h3 class="employees__list__ttl">働きやすい環境はみんなで創る</h3>
-                <span class="employees__list__showBtn"></span>
+                <img src="/assets/img/common/icon_downArr_accordion.png" alt="アイコンの画像" class="employees__list--arr">
               </div>
               <p class="employees__list__para">
                 働きやすさは人それぞれによって異なります。働く人が個々の働きやすさで行動すると、他の人の働きやすさを阻害するケースが多くあります。まずは「信頼関係」を築き、今の成果と貢献を評価して、お互いを尊重することによって会社の利益は上がります。上がった利益は会社で働く人全員の恩恵に繋がります。だから働きやすい環境をみんなで創ることが必要です。<br><br>
@@ -90,26 +91,32 @@
     <section>
       <div class="container">
         <ul class="threeCards">
-          <li class="threeCards__item">
-            <div class="threeCards__img">
-              <img src="./assets/img/category/new_graduate.jpg" alt="新卒採用(東京本社)の画像">
-            </div>
-            <a href="javascript:void(0);" class="threeCards__link threeCards__link--newGraduate">新卒採用(東京本社)</a>
-            <p class="threeCards__para">東京本社勤務希望の新卒・第二新卒採用についてはこちらから。</p>
+          <li>
+            <a href="javascript:void(0);" class="threeCards__item">
+              <div class="threeCards__img">
+                <img src="./assets/img/category/new_graduate.jpg" alt="新卒採用(東京本社)の画像">
+              </div>
+              <button class="threeCards__link threeCards__link--newGraduate">新卒採用(東京本社)</button>
+              <p class="threeCards__para">東京本社勤務希望の新卒・第二新卒採用についてはこちらから。</p>
+            </a>
           </li>
-          <li class="threeCards__item">
-            <div class="threeCards__img threeCards__img--midCareer">
-              <img src="./assets/img/category/mid_career.jpg" alt="中途採用(東京本社)の画像">
-            </div>
-            <a href="javascript:void(0);" class="threeCards__link threeCards__link--midCareer">中途採用(東京本社)</a>
-            <p class="threeCards__para">東京本社勤務希望の中途採用についてはこちらから。</p>
+          <li>
+            <a href="javascript:void(0);" class="threeCards__item">
+              <div class="threeCards__img threeCards__img--midCareer">
+                <img src="./assets/img/category/mid_career.jpg" alt="中途採用(東京本社)の画像">
+              </div>
+              <button class="threeCards__link threeCards__link--midCareer">中途採用(東京本社)</button>
+              <p class="threeCards__para">東京本社勤務希望の中途採用についてはこちらから。</p>
+            </a>
           </li>
-          <li class="threeCards__item">
-            <div class="threeCards__img">
-              <img src="./assets/img/category/iwate_laboratory.jpg" alt="クーシーラボ岩手採用の画像">
-            </div>
-            <a href="javascript:void(0);" class="threeCards__link threeCards__link--iwateLaboratory">クーシーラボ岩手採用</a>
-            <p class="threeCards__para">クーシーラボ岩手勤務希望の新卒・中途採用についてはこちら。</p>
+          <li>
+            <a href="javascript:void(0);" class="threeCards__item">
+              <div class="threeCards__img">
+                <img src="./assets/img/category/iwate_laboratory.jpg" alt="クーシーラボ岩手採用の画像">
+              </div>
+              <button class="threeCards__link threeCards__link--iwateLaboratory">クーシーラボ岩手採用</button>
+              <p class="threeCards__para">クーシーラボ岩手勤務希望の新卒・中途採用についてはこちら。</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -162,7 +169,7 @@
         <div class="container__sub">
           <div class="jobCategory__card">
             <span class="jobCategory__subTtl">採用やインターンなど働き方について質問が...</span>
-            <h2 class="jobCategory__ttl">Well, I have a question ...</h2>
+            <h2 class="jobCategory__ttl">Well,<br class="styleSp"> I have a question ...</h2>
             <ul class="jobCategory">
               <li class="jobCategory__item">
                 <div class="jobCategory__item--iconTtl">

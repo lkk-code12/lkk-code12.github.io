@@ -1790,8 +1790,8 @@ input[type=file] {
 }
 
 .headerBg {
-  background-color: rgba(225, 225, 225, 0.9) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(225, 225, 225, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* header sticky */

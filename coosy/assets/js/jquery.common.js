@@ -25,13 +25,9 @@ $(document).ready(function () {
   $(".employees__list__block").click(function () {
     // Close all open contents except the one clicked
     $(".employees__list__para").not($(this).next()).slideUp();
-    // $(".employees__list__block").not(this).removeClass("active");
 
     // Toggle the clicked one
     $(this).next(".employees__list__para").slideToggle();
-    // $(this).toggleClass("active");
-    $(this).children(".employees__list__showBtn").toggleClass("employees__list__hideBtn");
-    // $(this).not(children(".employees__list__showBtn")).removeClass("employees__list__hideBtn");
   });
 });
 
