@@ -1,9 +1,30 @@
 // function call header and footer
 // ======================
+// $(function () {
+//   $("#header").load("../../include/_header.html");
+//   $("#footer").load("../../include/_footer.html");
+// });
+
 $(function () {
-  $("#header").load("../../include/_header.html");
-  $("#footer").load("../../include/_footer.html");
+  // Get the current path to determine the correct relative path
+  // This ensures it works even if index.html is in a subfolder
+  var basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
+
+  // Helper to load partials with cache-busting
+  function loadPartial(selector, file) {
+    var url = basePath + "include/" + file + "?v=" + Date.now();
+    $(selector).load(url, function (response, status, xhr) {
+      if (status === "error") {
+        console.error("Error loading " + file + ": " + xhr.status + " " + xhr.statusText);
+      }
+    });
+  }
+
+  // Load header and footer
+  loadPartial("#header", "_header.html");
+  loadPartial("#footer", "_footer.html");
 });
+
 
 // scroll event for header
 // =======================
