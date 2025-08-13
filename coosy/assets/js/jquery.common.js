@@ -1,8 +1,8 @@
 // function call header and footer
 // ======================
 $(function () {
-  $("#header").load("../assets/include/_header.html");
-  $("#footer").load("../assets/include/_footer.html");
+  $("#header").load("assets/include/_header.html");
+  $("#footer").load("assets/include/_footer.html");
 });
 
 // scroll event for header
