@@ -163,29 +163,21 @@ function next_toggleSlide() {
       });
     }
     // ヘッダー周り
-    // $("#header").hover(
-    //   function () {
-    //     $(this).addClass("header-hover");
-    //   },
-    //   function () {
-    //     $(this).removeClass("header-hover");
-    //   }
-    // );
-    // $(".header__globalNav__checkbox").on("click", function () {
-    //   console.log("active");
-    //   $(this).toggleClass("open");
-    //   $('#header').toggleClass("open");
-    // });
+    $("#header").hover(
+      function () {
+        $(this).addClass("header-hover");
+      },
+      function () {
+        $(this).removeClass("header-hover");
+      }
+    );
 
-    $("*").on("click", function (e) {
-      var cl = e.target.className;
-      console.log(cl);
+    $(document).ready(function () {
+      $('#globalNavOpen').on('change', function () {
+        $('label[for="globalNavOpen"]').toggleClass('open', this.checked);
+      });
     });
 
-    $('label[for="globalNavOpen"]').on('click', function (e) {
-      e.stopPropagation();
-      $(this).toggleClass('active');
-    });
 
 
     /* ページトップのスクロールロック

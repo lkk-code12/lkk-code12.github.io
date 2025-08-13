@@ -1,16 +1,32 @@
 /* container & container sub */
-.container{
-  width: calc(100% - 80px);
-  margin: 0 auto;
+@media screen and (min-width: 767px) {
+  .container {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+
+  .container__sub {
+    max-width: 745px;
+    margin: 0 auto;
+  }
 }
 
-.container__sub{
-  max-width: 745px;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .container__sub {
+    max-width: 745px;
+    margin: 0 auto;
+  }
 }
+
 /* container & container sub */
 
-.item__top--recruit .engCaption, .iitem__top--recruit span{
+.item__top--recruit .engCaption,
+.iitem__top--recruit span {
   opacity: 0.5;
 }
 
@@ -19,13 +35,13 @@
 
 /* MV image
 ----------- */
-.mvSec{
+.mvSec {
   position: relative;
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .mvSec{
+  .mvSec {
     background: url('../../img/category/recruit_mv.jpg') no-repeat center center;
     background-size: cover;
     aspect-ratio: 2 / 1;
@@ -33,7 +49,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .mvSec{
+  .mvSec {
     background: url('../../img/sp/recruit_mv_sp.jpg') no-repeat center center;
     background-size: contain;
     aspect-ratio: 1 / 1;
@@ -42,7 +58,7 @@
 
 /* クーシー採用情報
 ------------------ */
-.recruit__info{
+.recruit__info {
   font-family: "Noto Sans JP Bold";
   font-size: 16px;
   font-weight: 700;
@@ -52,21 +68,21 @@
 }
 
 @media screen and (min-width: 900px) {
-  .recruit__info{
+  .recruit__info {
     top: 25%;
     right: 15%;
   }
 }
 
 @media screen and (max-width: 899px) and (min-width: 768px) {
-  .recruit__info{
+  .recruit__info {
     top: 25%;
     right: 12%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .recruit__info{
+  .recruit__info {
     top: 1%;
     right: 15%;
   }
@@ -79,7 +95,7 @@
 
 /* new employees ttl
 -------------------- */
-.new__employees{
+.new__employees {
   font-family: "Noto Sans JP Bold";
   text-align: center;
   font-weight: 700;
@@ -89,18 +105,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .new__employees{
+  .new__employees {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .new__employees{
+  .new__employees {
     font-size: 25px;
   }
 }
 
-.new__employees__para{
+.new__employees__para {
   font-family: "Noto Sans JP Regular";
   font-size: 14px;
   font-weight: 400;
@@ -110,14 +126,14 @@
   margin: 35px 0 45px;
 }
 
-.employees__list__block{
+.employees__list__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
 
-.employees__list__showBtn{
+.employees__list__showBtn {
   display: block;
   width: 25px;
   height: 5px;
@@ -126,7 +142,7 @@
   position: relative;
 }
 
-.employees__list__showBtn::before{
+.employees__list__showBtn::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -138,16 +154,16 @@
   transform: translate(-50%, -50%);
 }
 
-.employees__list__hideBtn{
+.employees__list__hideBtn {
   position: relative;
 }
 
-.employees__list__hideBtn::before{
+.employees__list__hideBtn::before {
   display: none;
 }
 
 /* employees list ttl */
-.employees__list__ttl{
+.employees__list__ttl {
   font-family: "Noto Sans JP Bold";
   font-weight: 700;
   line-height: 1.5;
@@ -156,23 +172,24 @@
 }
 
 @media screen and (min-width: 768px) {
-  .employees__list__ttl{
+  .employees__list__ttl {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .employees__list__ttl{
+  .employees__list__ttl {
     font-size: 16px;
   }
 }
 
-.employees__list__ttl::before{
+.employees__list__ttl::before {
   counter-increment: my_number;
   content: counter(my_number)" . ";
 }
 
-.employees__list__para, .new__employees__paraSec{
+.employees__list__para,
+.new__employees__paraSec {
   font-family: "Noto Sans JP Regular";
   font-weight: 400;
   line-height: 2;
@@ -182,35 +199,39 @@
 }
 
 @media screen and (min-width: 768px) {
-  .employees__list__para, .new__employees__paraSec{
+
+  .employees__list__para,
+  .new__employees__paraSec {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .employees__list__para, .new__employees__paraSec{
+
+  .employees__list__para,
+  .new__employees__paraSec {
     font-size: 13px;
   }
 }
 
-.employees__list__para{
+.employees__list__para {
   display: none;
 }
 
-.list__para--active{
+.list__para--active {
   display: block;
 }
 
-.new__employees__paraSec{
+.new__employees__paraSec {
   letter-spacing: 0.7px;
   margin: 55px 0 20px;
 }
 
-.paraSec--txt{
+.paraSec--txt {
   margin: 25px 0 5px;
 }
 
-.new__employees__relationship{
+.new__employees__relationship {
   font-family: "Noto Sans JP Bold";
   font-size: 24px;
   font-weight: 700;
@@ -219,11 +240,12 @@
   color: #333333;
   margin: 5px 0 20px;
 }
+
 /* クーシーが考える「新しい働き方」とは？ */
 
 /* Tokyo office & Iwate three cards 
 =================================== */
-.threeCards{
+.threeCards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -231,27 +253,27 @@
 }
 
 @media screen and (max-width: 1100px) and (min-width: 768px) {
-  .threeCards{
+  .threeCards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .threeCards{
+  .threeCards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.threeCards__img img{
+.threeCards__img img {
   width: 100%;
   height: auto;
 }
 
-.threeCards__img--midCareer{
+.threeCards__img--midCareer {
   position: relative;
 }
 
-.threeCards__img--midCareer::after{
+.threeCards__img--midCareer::after {
   position: absolute;
   content: "";
   bottom: 10px;
@@ -262,7 +284,7 @@
   height: 55%;
 }
 
-.threeCards__link{
+.threeCards__link {
   display: block;
   font-family: "Noto Sans JP Bold";
   font-size: 20px;
@@ -276,7 +298,7 @@
   position: relative;
 }
 
-.threeCards__link::after{
+.threeCards__link::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -288,25 +310,27 @@
   transform: translateY(-50%);
 }
 
-.threeCards__link--newGraduate, .threeCards__link--midCareer, .threeCards__link--iwateLaboratory{
+.threeCards__link--newGraduate,
+.threeCards__link--midCareer,
+.threeCards__link--iwateLaboratory {
   width: 100%;
   height: 40px;
   margin: 10px 0 15px;
 }
 
-.threeCards__link--newGraduate{
+.threeCards__link--newGraduate {
   background: url('../../img/category/bg_newGraduate_link.jpg');
 }
 
-.threeCards__link--midCareer{
+.threeCards__link--midCareer {
   background: url('../../img/category/bg_midCareer_link.jpg');
 }
 
-.threeCards__link--iwateLaboratory{
+.threeCards__link--iwateLaboratory {
   background: url('../../img/category/bg_laboratory_link.jpg');
 }
 
-.threeCards__para{
+.threeCards__para {
   font-family: "Noto Sans JP Regular";
   font-size: 15px;
   font-weight: 400;
@@ -314,15 +338,16 @@
   letter-spacing: 2.3px;
   color: #333333;
 }
+
 /* Tokyo office & Iwate three cards */
 
 /* Browse by Job Category 
 ========================= */
-.jobCategory__card{
+.jobCategory__card {
   margin: 100px 0;
 }
 
-.jobCategory__subTtl{
+.jobCategory__subTtl {
   font-family: "Noto Sans JP Bold";
   font-size: 14px;
   font-weight: 700;
@@ -331,7 +356,7 @@
   color: #333333;
 }
 
-.jobCategory__ttl{
+.jobCategory__ttl {
   font-family: "Noto Sans JP Bold";
   font-weight: 700;
   letter-spacing: -2.3px;
@@ -339,20 +364,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .jobCategory__ttl{
+  .jobCategory__ttl {
     font-size: 46px;
     line-height: 1.5;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .jobCategory__ttl{
+  .jobCategory__ttl {
     font-size: 33px;
     line-height: 1;
   }
 }
 
-.jobCategory{
+.jobCategory {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -360,19 +385,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .jobCategory{
+  .jobCategory {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.jobCategory__item--iconTtl{
+.jobCategory__item--iconTtl {
   display: flex;
   align-items: center;
   gap: 20px;
   font-family: "Noto Sans JP Bold";
 }
 
-.jobCategory__item--subTtl{
+.jobCategory__item--subTtl {
   font-family: "Noto Sans JP Bold";
   font-weight: 700;
   line-height: 1.43;
@@ -381,18 +406,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .jobCategory__item--subTtl{
+  .jobCategory__item--subTtl {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .jobCategory__item--subTtl{
+  .jobCategory__item--subTtl {
     font-size: 12px;
   }
 }
 
-.jobCategory__item--ttl{
+.jobCategory__item--ttl {
   font-family: "Noto Sans JP Bold";
   font-weight: 700;
   line-height: 1.5;
@@ -401,18 +426,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .jobCategory__item--ttl{
+  .jobCategory__item--ttl {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .jobCategory__item--ttl{
+  .jobCategory__item--ttl {
     font-size: 20px;
   }
 }
 
-.jobCategory__item--para{
+.jobCategory__item--para {
   font-family: "Noto Sans JP Regular";
   font-weight: 400;
   line-height: 1.7;
@@ -422,18 +447,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .j.jobCategory__item--para{
+  .j.jobCategory__item--para {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .j.jobCategory__item--para{
+  .j.jobCategory__item--para {
     font-size: 12px;
   }
 }
 
-.jobCategory__item--link{
+.jobCategory__item--link {
   font-family: "Noto Sans JP Bold";
   font-size: 14px;
   font-weight: 700;
@@ -444,7 +469,7 @@
   position: relative;
 }
 
-.jobCategory__item--link::after{
+.jobCategory__item--link::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -455,46 +480,47 @@
   height: 10px;
   transform: translateY(-50%);
 }
+
 /* Browse by Job Category */
 
 /* Recruit img grid
 =================== */
-.recruit__imgGrid--one{
+.recruit__imgGrid--one {
   grid-area: img1;
 }
 
-.recruit__imgGrid--two{
+.recruit__imgGrid--two {
   grid-area: img2;
 }
 
-.recruit__imgGrid--three{
+.recruit__imgGrid--three {
   grid-area: img3;
 }
 
-.recruit__imgGrid--four{
+.recruit__imgGrid--four {
   grid-area: img4;
 }
 
-.recruit__imgGrid--five{
+.recruit__imgGrid--five {
   grid-area: img5;
 }
 
-.recruit__imgGrid--six{
+.recruit__imgGrid--six {
   grid-area: img6;
 }
 
-.recruit__imgGrid--seven{
+.recruit__imgGrid--seven {
   grid-area: img7;
 }
 
-.recruit__imgGrid--eight{
+.recruit__imgGrid--eight {
   grid-area: img8;
 }
 
 @media screen and (min-width: 768px) {
-  .recruit__imgGrid{
+  .recruit__imgGrid {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "img1 img2 img3 img4"
       "img5 img6 img7 img8";
     margin: 100px 0;
@@ -502,18 +528,20 @@
 }
 
 @media screen and (max-width: 767px) {
-  .recruit__imgGrid{
+  .recruit__imgGrid {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "img1 img2"
       "img3 img4"
       "img5 img6"
       "img7 img8";
-  }  
+    margin: 50px 0;
+  }
 }
 
-.recruit__imgGrid img{
+.recruit__imgGrid img {
   width: 100%;
   height: 100%;
 }
+
 /* Recruit img grid */
