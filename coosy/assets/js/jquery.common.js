@@ -1,12 +1,14 @@
 // function call header and footer
 // ======================
-$(function () {
-  $("#header").load("./assets/include/_header.html");
-});
+setTimeout(function () {
+  $(function () {
+    $("#header").load("./assets/include/_header.html");
+  });
 
-$(function () {
-  $("#footer").load("./assets/include/_footer.html");
-});
+  $(function () {
+    $("#footer").load("./assets/include/_footer.html");
+  });
+}, 1000);
 
 // scroll event for header
 // =======================
